@@ -1,0 +1,3420 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass memoir
+\begin_preamble
+%\renewcommand{\contentsname}{Table of Contents}
+%\renewcommand{\printtoctitle}[1]{\centering\Huge\bfseries #1}
+\usepackage{lmodern}
+ \usepackage{multicol}
+\usepackage[svgnames]{xcolor}
+\usepackage{calc,graphicx,soul}
+\usepackage{wrapfig}
+\usepackage{tikz,float}
+\usepackage[
+  backend=biber,
+  citestyle=alphabetic,
+  bibstyle=numeric,
+ sorting=nyt,
+ url=false, 
+doi=false,
+eprint=false,
+ url=false,
+ isbn=false
+]{biblatex}
+\usepackage[font=small,labelfont=bf,figurename=Fig.]{caption}
+
+%\nocite{*}
+\addbibresource{analysis.bib}
+%\setsecheadstyle{\phantomsection\Large\scshape\MakeLowercase} 
+%\setsubsecheadstyle{\phantomsection\normalsize\bfseries} 
+%\setsubsubsecheadstyle{\phantomsection\small\bfseries}
+%\setaftersubsubsecskip{-1em}
+%\maxsecnumdepth{subsection}
+%\setsecnumdepth{subsection} 
+%\setsecheadstyle{\phantomsection\Large\scshape\MakeLowercase}
+%\setcounter{tocdepth}{1}
+\end_preamble
+\options openany
+\use_default_options true
+\begin_modules
+eqs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf5
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\backgroundcolor #d9d9ff
+\boxbgcolor #55aaff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1.875in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{doc}{RGB}{0,60,110}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+drop} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+titleLA }
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+begingroup 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+drop=0.2
+\backslash
+textheight 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{0.05
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+color{doc!50} 
+\backslash
+rule{6pt}{0.8
+\backslash
+textheight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.05
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{0.8
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+drop} %
+\backslash
+vspace{3
+\backslash
+baselineskip} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+noindent
+\backslash
+HUGE
+\backslash
+bfseries LECTURES ON 
+\backslash
+
+\backslash
+[0.1
+\backslash
+baselineskip]
+\backslash
+
+\backslash
+NUMBER SYSTEMS} 
+\backslash
+
+\backslash
+[2
+\backslash
+baselineskip] 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge Tara Nanda}
+\backslash
+
+\backslash
+[
+\backslash
+baselineskip] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vspace{2
+\backslash
+baselineskip} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{minipage}{0.8
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+itshape A course given at IISER Thiruvanathapuram in Varsha 2014} 
+\backslash
+end{minipage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+endgroup}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleLA
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{companion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{   colorlinks   = true, %Colours links instead of ugly boxes
+\end_layout
+
+\begin_layout Plain Layout
+
+urlcolor     = blue, %Colour for external hyperlinks   
+\end_layout
+
+\begin_layout Plain Layout
+
+linkcolor    = Fuchsia, %Colour of internal links   
+\end_layout
+
+\begin_layout Plain Layout
+
+citecolor   = red %Colour of citations 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{chapterstyle}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Real Numbers
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+Rational numbers can be represented by points on a line.
+ We shall see that there are gaps in this number line which will be filled
+ by irrational numbers.
+ The aggregate of rational and irrational numbers constitute the real number
+ system.
+ Rational numbers have a terminating or recurring decimal representation
+ whereas irrational numbers have an infinite non-recurring and non-terminating
+ decimal representation.
+ A formal construction of the real number system will be taken up in subsequent
+ sections.
+\end_layout
+
+\begin_layout Section
+Rational numbers.
+\end_layout
+
+\begin_layout Subsection
+Positive Integers.
+ 
+\end_layout
+
+\begin_layout Standard
+It was to the numbers, 
+\begin_inset Formula $1,2,3,4,$
+\end_inset
+
+ etc.
+ that we were first introduced through the process of 
+\emph on
+counting
+\emph default
+ certain objects.
+ The totality of these numbers is known as the aggregate of 
+\emph on
+natural numbers
+\emph default
+, 
+\emph on
+whole numbers
+\emph default
+ or 
+\emph on
+positive integers
+\emph default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+While the operations of addition and multiplications are possible in relation
+ to the aggregate of positive integers, this is not the case in respect
+ of the inverse operations of subtraction and division.
+ Thus, for example, the symbols
+\begin_inset Formula 
+\[
+2-3,\,2\div3
+\]
+
+\end_inset
+
+are meaningless in respect of the aggregate of positive integers.
+\end_layout
+
+\begin_layout Subsection
+Fractional numbers.
+\end_layout
+
+\begin_layout Standard
+At a later stage, another class of numbers like 
+\begin_inset Formula $p/q$
+\end_inset
+
+ (e.g., 
+\begin_inset Formula $\frac{1}{2},\frac{3}{4}$
+\end_inset
+
+) where 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ are natural numbers, was added to the former class.
+ This is known as the class of fractions and it obviously includes natural
+ numbers as a sub-class: 
+\begin_inset Formula $q$
+\end_inset
+
+ being equal to 
+\begin_inset Formula $1$
+\end_inset
+
+ in this case.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The introduction of fractional numbers is motivated, from an abstract point
+ of view, to render division  possible and, from concrete point of view,
+ to render numbers serviceable for measurement also in addition to counting.
+\end_layout
+
+\begin_layout Subsection
+Rational numbers.
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Rational-numbers."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Still later, the class of numbers was enlarged by incorporating in it the
+ class of negative fractions including negative integers and zero.
+ The entire aggregate of these numbers is known as the 
+\emph on
+aggregate of rational numbers
+\emph default
+.
+ Every rational number is expressible as 
+\begin_inset Formula $p/q$
+\end_inset
+
+, where 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ are any two integers, positive or negative and 
+\begin_inset Formula $q$
+\end_inset
+
+ is not zero.
+\begin_inset Newline newline
+\end_inset
+
+The introduction of negative numbers is motivated, from an abstract point
+ of view to render subtraction always possible and, from concrete point
+ of view, to facilitate a unified treatment of oppositely directed pairs
+ of entities such as, gain and loss, rise and fall, etc.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fundamental operations on rational numbers.
+ 
+\end_layout
+
+\begin_layout Standard
+An important property of the aggregate of rational numbers is that the operation
+s of addition, multiplication, subtraction and division can be performed
+ upon any two such numbers, (with one 
+\emph on
+exception
+\emph default
+ which is considered below in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Meaningless-operation-of"
+
+\end_inset
+
+ ) and the number obtained as the result of these operations is again a
+ rational number.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This property is expressed by saying that the aggregate of rational numbers
+ is 
+\emph on
+closed
+\emph default
+ with respect to the four fundamental operations.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Meaningless-operation-of"
+
+\end_inset
+
+Meaningless operation of division by zero.
+\end_layout
+
+\begin_layout Standard
+It is important to note that the only exception to the above property is
+ `division by zero' which is a meaningless operation.
+ This may be seen as follows :--
+\begin_inset Newline newline
+\end_inset
+
+To divide 
+\begin_inset Formula $a$
+\end_inset
+
+ by 
+\begin_inset Formula $b$
+\end_inset
+
+ amounts to determining a number 
+\begin_inset Formula $c$
+\end_inset
+
+ such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+bc=a
+\]
+
+\end_inset
+
+and the division will be intelligible only, if and only if, the determination
+ of 
+\begin_inset Formula $c$
+\end_inset
+
+ is 
+\emph on
+uniquely possible
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+Now, there is no number which when multiplied by zero produces a number
+ other than zero so that a 
+\begin_inset Formula $a/0$
+\end_inset
+
+ is 
+\emph on
+no
+\emph default
+ number when 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ Also any number when multiplied by zero produces zero so that 
+\begin_inset Formula $0/0$
+\end_inset
+
+ may be 
+\emph on
+any
+\emph default
+ number.
+ 
+\begin_inset Newline newline
+\end_inset
+
+On account of this 
+\emph on
+impossibility
+\emph default
+ in one case and 
+\emph on
+indefiniteness
+\emph default
+ in the other, the operation of division by zero must be always avoided.
+ 
+\begin_inset Newline newline
+\end_inset
+
+A disregard of this exception often leads to absurd results as is illustrated
+ below in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:excep"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:excep"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+emph{
+\backslash
+roman*})
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $x=6.$
+\end_inset
+
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{2}-36 & = & x-6,\\
+\mbox{or }(x-6)(x+6) & = & x-6.
+\end{eqnarray*}
+
+\end_inset
+
+
+\emph on
+Dividing both sides
+\emph default
+ by 
+\begin_inset Formula $x-6$
+\end_inset
+
+, we get
+\begin_inset Formula 
+\begin{eqnarray*}
+x+6 & = & 1,\\
+6+6 & = & 1,\mbox{ \emph{i.e, \ensuremath{\mbox{\ensuremath{12}=\ensuremath{1}}.}}}
+\end{eqnarray*}
+
+\end_inset
+
+which is clearly absurd.
+\end_layout
+
+\begin_layout Enumerate
+We may also remark in this connection that
+\begin_inset Formula 
+\begin{equation}
+\frac{x^{2}-36}{x-6}=\frac{\left(x-6\right)\left(x+6\right)}{\left(x-6\right)}=x+6,\mbox{ only when \ensuremath{x\neq6.}}\label{eq:divbyzero}
+\end{equation}
+
+\end_inset
+
+For 
+\begin_inset Formula $x=6,$
+\end_inset
+
+ the left hand expression 
+\begin_inset Formula $\left(x^{2}-36\right)/\left(x-6\right)$
+\end_inset
+
+, is meaning-less whereas the right hand expression, 
+\begin_inset Formula $x+6,$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $12$
+\end_inset
+
+ so that the equality ceases to hold for 
+\begin_inset Formula $x=6.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:divbyzero"
+
+\end_inset
+
+) above is proved by dividing the numerator and denominator of the fraction
+ 
+\begin_inset Formula $\left(x^{2}-36\right)/\left(x-6\right)$
+\end_inset
+
+ by 
+\begin_inset Formula $\left(x-6\right)$
+\end_inset
+
+ and this operation of division is possible when the divisor 
+\begin_inset Formula $\left(x-6\right)\neq0,$
+\end_inset
+
+ 
+\emph on
+i.e.
+\emph default
+, when 
+\begin_inset Formula $x\neq6.$
+\end_inset
+
+ This explains the 
+\emph on
+restricted
+\emph default
+ character of the equality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:divbyzero"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Exercise
+Show that the aggregate of natural numbers is not closed with respect to
+ the operations of subtraction and division.
+ Also show that the aggregate of positive fractions is not closed with respect
+ to the operations of subtraction.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "recurring"
+
+\end_inset
+
+Show that every rational number is expressible as a terminating or a recurring
+ decimal.
+\end_layout
+
+\begin_layout Example
+To decimalize 
+\begin_inset Formula $p/q$
+\end_inset
+
+, we have first to divide 
+\begin_inset Formula $p$
+\end_inset
+
+ by 
+\begin_inset Formula $q$
+\end_inset
+
+ and then each remainder, after multiplication with 
+\begin_inset Formula $10$
+\end_inset
+
+, is to be divided by 
+\begin_inset Formula $q$
+\end_inset
+
+ to obtain the successive figures in the decimal expression of 
+\begin_inset Formula $p/q$
+\end_inset
+
+.
+ The decimal expression will be terminating if, at some stage, the remainder
+ vanishes.
+ Otherwise, the process will be unending.
+ In the latter case, the remainder will always be one of the finite set
+ of numbers 
+\begin_inset Formula $1,2,\ldots,q-1$
+\end_inset
+
+ and so must repeat itself at some stage.
+ From this stage onward, the quotients will also repeat themselves and the
+ decimal expression will, therefore, be recurring.
+\end_layout
+
+\begin_layout Exercise
+For what values of 
+\begin_inset Formula $x$
+\end_inset
+
+ are the following equalities 
+\emph on
+not
+\emph default
+ valid :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[c]{
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+emph{
+\backslash
+roman*})
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\frac{x}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x^{2}-a^{2}}{x-a}=x+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1-x}{1-\sqrt{x}}=1+\sqrt{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1-\cos x}{\sin x}=\tan\frac{x}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Representation of rational numbers by points along a line.
+\end_layout
+
+\begin_layout Standard
+The mode of representing rational numbers by points along a line or by segments
+ of a line, which may be known as the 
+\emph on
+number axis
+\emph default
+, will now be explained.
+ 
+\begin_inset Newline newline
+\end_inset
+
+We start with marking an arbitrary point 
+\begin_inset Formula $O$
+\end_inset
+
+ on the number axis and calling it the 
+\emph on
+origin
+\emph default
+ or zero point.
+ The number zero will be represented by the point 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The point 
+\begin_inset Formula $O$
+\end_inset
+
+ divides the number axis into two parts or sides.
+ Any one of these may be called positive and the other, then negative.
+ Usually, the number axis is drawn parallel to the printed lines of the
+ page and the right hand side of 
+\begin_inset Formula $O$
+\end_inset
+
+ is termed positive and the left hand side of 
+\begin_inset Formula $O$
+\end_inset
+
+ negative.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{wrapfigure}{l}{0.3
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{center}     
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=0.48
+\backslash
+textwidth]{gull}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{center}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue,->](0,0)--(3.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (0,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0) node[below]{$O$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (1.75,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.75,0) node[below] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Number Line}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{wrapfigure}
+\end_layout
+
+\end_inset
+
+On the positive side, we take an arbitrary length 
+\begin_inset Formula $OA$
+\end_inset
+
+, and call it the 
+\emph on
+unit
+\emph default
+ length.
+ 
+\begin_inset Newline newline
+\end_inset
+
+We say, then, that the number 
+\begin_inset Formula $1$
+\end_inset
+
+ is represented by the point 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+After having fixed an 
+\emph on
+origin
+\emph default
+, 
+\emph on
+positive sense
+\emph default
+ and a 
+\emph on
+unit length
+\emph default
+ on the number axis in the manner indicated above, we are in a position
+ to determine a point representing any given rational number as explained
+ below :--
+\end_layout
+
+\begin_layout Subsubsection*
+Positive integers.
+\end_layout
+
+\begin_layout Standard
+Firstly, we consider any positive integer, 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ We take a point on the positive side of the line such that its distance
+ from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+ times the unit length 
+\begin_inset Formula $OA$
+\end_inset
+
+.
+ This point will be reached by measuring successively 
+\begin_inset Formula $m$
+\end_inset
+
+ steps each equal to 
+\begin_inset Formula $OA$
+\end_inset
+
+ starting from 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ This point, then, is said to represent the positive integer, 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Negative integers.
+\end_layout
+
+\begin_layout Standard
+To represent a negative integer,
+\begin_inset Formula $-m$
+\end_inset
+
+, we take a point on the negative side of 
+\begin_inset Formula $O$
+\end_inset
+
+ such that its distance from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+ times the unit length 
+\begin_inset Formula $OA$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This point represents the negative integer, 
+\begin_inset Formula $-m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Fractions.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, let 
+\begin_inset Formula $p/q$
+\end_inset
+
+ be any fraction ; 
+\begin_inset Formula $q$
+\end_inset
+
+ being a positive integer.
+ Let 
+\begin_inset Formula $OA$
+\end_inset
+
+ be divided into 
+\begin_inset Formula $q$
+\end_inset
+
+ equal parts; 
+\begin_inset Formula $OB$
+\end_inset
+
+ being one of them.
+ We take a point on the positive or negative side of 
+\begin_inset Formula $O$
+\end_inset
+
+ according as 
+\begin_inset Formula $p$
+\end_inset
+
+ is positive or negative such that its distance from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $p$
+\end_inset
+
+ times (or, 
+\begin_inset Formula $-p$
+\end_inset
+
+ times if 
+\begin_inset Formula $p$
+\end_inset
+
+ is negative) the distance 
+\begin_inset Formula $OB$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The point so obtained represents the fraction, 
+\begin_inset Formula $p/q$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+If a point 
+\begin_inset Formula $P$
+\end_inset
+
+ represents a rational number 
+\begin_inset Formula $p/q$
+\end_inset
+
+, then the measure of the length 
+\begin_inset Formula $OP$
+\end_inset
+
+ is clearly 
+\begin_inset Formula $p/q$
+\end_inset
+
+ or 
+\begin_inset Formula $-p/q$
+\end_inset
+
+ according as the number is positive or negative.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Sometimes we say that the number 
+\begin_inset Formula $p/q$
+\end_inset
+
+ is represented by the segment 
+\begin_inset Formula $OP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Irrational numbers.
+ Real numbers.
+ 
+\end_layout
+
+\begin_layout Standard
+We have seen in the last article that every rational number can be represented
+ by a point of a line.
+ Also, it is easy, to see that we can cover the line with such points as
+ closely as we like.
+ The natural question now arises, ``Is the converse true ?'' Is it possible
+ to assign a rational number to every point of the number-axis? A simple
+ consideration, as detailed below, will clearly show that it is not so.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{wrapfigure}{l}{0.3
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue,->](0,0)--(3.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (0,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0) node[below]{$O$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (1.75,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.75,0) node[below] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue] (0,0) rectangle (1.75,1.75);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue] (0,0)-- (1.75,1.75);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (2.47,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.47,0) node[below] {$P$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Square root 2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{wrapfigure}
+\end_layout
+
+\end_inset
+
+Construct a square each of whose sides is equal to the unit length 
+\begin_inset Formula $OA$
+\end_inset
+
+ and take a point 
+\begin_inset Formula $P$
+\end_inset
+
+ on the number-axis such that 
+\begin_inset Formula $OP$
+\end_inset
+
+ is equal in the length to the diagonal of the square.
+ It will now be shown that the point 
+\begin_inset Formula $P$
+\end_inset
+
+ cannot correspond to a rational number i.e., the length of 
+\begin_inset Formula $OP$
+\end_inset
+
+ cannot have a rational number as its measure.
+\end_layout
+
+\begin_layout Standard
+If possible, let its measure be a rational number 
+\begin_inset Formula $p/q$
+\end_inset
+
+ so that, by Pythagoras' theorem, we have
+\begin_inset Formula 
+\begin{equation}
+\left(\frac{p}{q}\right)^{2}=1^{2}+1^{2}=2,\mbox{ \emph{i.e.}, \ensuremath{p^{2}=2q^{2}.}}\label{eq:irr}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We may suppose that 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ have no common factor, for, such factors, if any, can be canceled to begin
+ with.
+ 
+\end_layout
+
+\begin_layout Standard
+Firstly we notice that
+\begin_inset Formula 
+\[
+\left(2n\right)^{2}=4n^{2},\left(2n+1\right)^{2}=\left(4n^{2}+4n\right)+1
+\]
+
+\end_inset
+
+so that the square of an even number is even and that of an odd number is
+ odd.
+\end_layout
+
+\begin_layout Standard
+From the equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:irr"
+
+\end_inset
+
+), we see, that 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+ is an even number.
+\begin_inset Newline newline
+\end_inset
+
+Therefore, 
+\begin_inset Formula $p$
+\end_inset
+
+ itself must be even.
+\end_layout
+
+\begin_layout Standard
+Let, then 
+\begin_inset Formula $p$
+\end_inset
+
+ be equal to 
+\begin_inset Formula $2n$
+\end_inset
+
+ where 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer.
+\begin_inset Formula 
+\[
+\therefore\qquad4n^{2}=2q^{2}\mbox{ or \ensuremath{q^{2}=2n^{2}.}}
+\]
+
+\end_inset
+
+Thus, 
+\begin_inset Formula $q^{2}$
+\end_inset
+
+ is also even and so 
+\begin_inset Formula $q$
+\end_inset
+
+ is even.
+\begin_inset Newline newline
+\end_inset
+
+Hence 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ have a common factor 
+\begin_inset Formula $2$
+\end_inset
+
+ and this conclusion contradicts the hypothesis that they have no common
+ factor.
+ Thus the measure 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ of 
+\begin_inset Formula $OP$
+\end_inset
+
+ is not a rational number.
+ There exists, therefore a point on the number-axis not corresponding to
+ any rational number.
+\end_layout
+
+\begin_layout Standard
+Again , we take a point 
+\begin_inset Formula $L$
+\end_inset
+
+ on the line such that the length 
+\begin_inset Formula $OL$
+\end_inset
+
+ is any rational multiple say, 
+\begin_inset Formula $p/q$
+\end_inset
+
+, of 
+\begin_inset Formula $OP$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The length 
+\begin_inset Formula $OL$
+\end_inset
+
+ cannot have a rational measure.
+ For, if possible, let 
+\begin_inset Formula $m/n$
+\end_inset
+
+ be the measure of 
+\begin_inset Formula $OL$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\therefore\qquad\frac{p}{q}\sqrt{2}=\frac{m}{n}\mbox{ or }\sqrt{2}=\frac{mq}{np},
+\]
+
+\end_inset
+
+which states that 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is a rational number, being equal to 
+\begin_inset Formula $mq/np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This is a contradiction.
+ Hence 
+\begin_inset Formula $L$
+\end_inset
+
+ cannot correspond to a rational number.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus we see that there exist an unlimited number of points on the number-axis
+ which do not correspond to rational numbers.
+\end_layout
+
+\begin_layout Standard
+If we now require that our aggregate of numbers should be such that after
+ the choice of unit length on the line, every point of the line should have
+ a number corresponding to it (or that 
+\emph on
+every length should be capable of measurement
+\emph default
+), we are forced to extend our system of numbers further by the introduction
+ of what are called 
+\emph on
+irrational numbers
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We will thus associate an irrational number to every point of the line which
+ does not correspond to a rational number.
+ 
+\end_layout
+
+\begin_layout Standard
+A method of representing irrational numbers in the decimal notation is given
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Decimal-representation-of"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Real Number.
+ 
+\series default
+\emph on
+A number, rational or irrational, is called a real number.
+\end_layout
+
+\begin_layout Definition
+The aggregate of rational and irrational number is, thus, the aggregate
+ of real numbers.
+ 
+\end_layout
+
+\begin_layout Definition
+Each real number is represented by some point of the number axis and each
+ point of the number-axis has some real number, rational or irrational,
+ corresponding to it.
+ 
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Or
+\emph default
+, we might say, that each real number is the measure of some length 
+\emph on
+OP
+\emph default
+ and that the aggregate of real numbers is enough to measure every length.
+\end_layout
+
+\begin_layout Subsection
+Number and Point.
+\end_layout
+
+\begin_layout Standard
+If any number, say 
+\begin_inset Formula $x$
+\end_inset
+
+, is represented by a point 
+\begin_inset Formula $P$
+\end_inset
+
+, then we usually say that 
+\emph on
+the point
+\emph default
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph on
+is
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the terms, number and point, are generally used in an indistinguishable
+ manner.
+\end_layout
+
+\begin_layout Subsection
+Closed and open intervals.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a,b$
+\end_inset
+
+ be two given numbers such that 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Then the set of numbers 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\leq x\leq b$
+\end_inset
+
+ is called a closed interval denoted by the symbol 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Also the set of numbers 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $a<x<b$
+\end_inset
+
+ is called an open interval denoted by the symbol 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $b-a$
+\end_inset
+
+ is referred to as the length of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ as also of 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Decimal-representation-of"
+
+\end_inset
+
+Decimal representation of real numbers.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $P$
+\end_inset
+
+ be any given point of the number-axis.
+ We now seek to obtain the decimal representation of the number associated
+ with the point 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To start with, we suppose that the point 
+\begin_inset Formula $P$
+\end_inset
+
+ lies on the positive side of 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let the points corresponding to integers be marked on the number-axis so
+ that the whole axis is divided into intervals of length one each.
+ 
+\end_layout
+
+\begin_layout Standard
+Now, if 
+\begin_inset Formula $P$
+\end_inset
+
+ coincides with a point of division, it corresponds to an integer and we
+ need proceed no further.
+ In case 
+\begin_inset Formula $P$
+\end_inset
+
+ falls between two points of division, say 
+\begin_inset Formula $a,a+1$
+\end_inset
+
+, we sub-divide the interval 
+\begin_inset Formula $(a,a+1)$
+\end_inset
+
+ into 
+\begin_inset Formula $10$
+\end_inset
+
+ equal parts so that the length of each part is 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+ .
+ The points of division, now, are,
+\begin_inset Formula 
+\[
+a,a+\frac{1}{10},a+\frac{2}{10},\ldots,a+\frac{9}{10},a+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph on
+coincides with any of these points of division, then it corresponds to a
+ rational number
+\emph default
+.
+ In the alternative case, it falls between two points of division, say
+\begin_inset Formula 
+\[
+a+\frac{a_{1}}{10},\: a+\frac{a_{1}+1}{10},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+i.e.,
+\begin_inset Formula 
+\[
+a.a_{1},\, a.\left(a_{1}+1\right),
+\]
+
+\end_inset
+
+
+\emph default
+where, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, is any one of the integers 
+\begin_inset Formula $0,1,2,\ldots,9.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We again sub-divide the interval
+\begin_inset Formula 
+\[
+\left[a+\frac{a_{1}}{10},a+\frac{a_{1}+1}{10},\right]
+\]
+
+\end_inset
+
+into 
+\begin_inset Formula $10$
+\end_inset
+
+ equal parts so that the length of each part is 
+\begin_inset Formula $1/10^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The points of division, now, are
+\begin_inset Formula 
+\[
+a+\frac{a_{1}}{10},a+\frac{a_{1}}{10}+\frac{1}{10^{2}}+a+\frac{a_{1}}{10}+\frac{2}{10^{2}},a+\frac{a_{1}}{10}+\frac{9}{10^{2}},a+\frac{a_{1}+1}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The point P will either coincide with one of the above points of division
+ (in which case it corresponds to a rational number) or will lie between
+ two points of division say
+\begin_inset Formula 
+\[
+a+\frac{a_{1}}{10}+\frac{a_{2}}{10^{2}},\, a+\frac{a_{1}}{10}+\frac{a_{2}+1}{10^{2}}
+\]
+
+\end_inset
+
+
+\emph on
+i.e.,
+\begin_inset Formula 
+\[
+a.a_{1}a_{2},\, a.a_{1}\left(a_{2}+1\right),
+\]
+
+\end_inset
+
+
+\emph default
+where, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+, is any one of the integers 
+\begin_inset Formula $0,1,2,\ldots,9.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We again sub-divide this last interval
+\begin_inset Formula 
+\[
+\left[a+\frac{a_{1}}{10}+\frac{a_{2}}{10^{2}},\, a+\frac{a_{1}}{10}+\frac{a_{2}+1}{10^{2}}\right]
+\]
+
+\end_inset
+
+ and continue to repeat the process.
+ After a number of steps, say 
+\begin_inset Formula $n$
+\end_inset
+
+, the point 
+\begin_inset Formula $P$
+\end_inset
+
+ will either be found to coincide with some point of division (in this case
+ it corresponds to a rational number) or lie between two points of the form
+\begin_inset Formula 
+\[
+a+\frac{a_{1}}{10}+\frac{a_{2}}{10^{2}}+\cdots+\frac{a_{n}}{10^{n}},\, a+\frac{a_{1}}{10}+\frac{a_{2}}{10^{2}}+\cdots+\frac{a_{n}+1}{10^{n}},
+\]
+
+\end_inset
+
+
+\emph on
+i.e.,
+\begin_inset Formula 
+\[
+a.a_{1}a_{2}\ldots a_{n},\, a.a_{1}a_{n}\ldots\left(a_{n}+1\right),
+\]
+
+\end_inset
+
+
+\emph default
+the distance between which is 
+\begin_inset Formula $1/10^{n}$
+\end_inset
+
+ and which clearly gets smaller and smaller as 
+\begin_inset Formula $n$
+\end_inset
+
+ increases.
+ 
+\end_layout
+
+\begin_layout Standard
+The process can clearly be continued indefinitely.
+ 
+\end_layout
+
+\begin_layout Standard
+The successive intervals in which 
+\begin_inset Formula $P$
+\end_inset
+
+ lies go on shrinking and will clearly close up to the point 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This point 
+\begin_inset Formula $P$
+\end_inset
+
+ is then represented by the infinite decimal
+\begin_inset Formula 
+\[
+a.a_{1}a_{2}a_{3}\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Conversely
+\emph default
+, consider any infinite decimal
+\begin_inset Formula 
+\[
+a.a_{1}a_{2}a_{3}\ldots
+\]
+
+\end_inset
+
+and construct the series of intervals
+\begin_inset Formula 
+\[
+\left[a,a+1\right],\left[a+\frac{a_{1}}{10},a+\frac{a_{1}+1}{10}\right],\left[a+\frac{a_{1}}{10}+\frac{a_{2}}{10^{2}},a+\frac{a_{1}}{10}+\frac{a_{2}+1}{10^{2}}\right],\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Each of these intervals lies within the preceding one; their lengths go
+ on diminishing and by taking 
+\begin_inset Formula $n$
+\end_inset
+
+ sufficiently large we can make the length as near to zero as we like.
+ We thus see that these intervals shrink to a point.
+ This fact is related to the intuitively perceived aspect of the continuity
+ of a straight line.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus there is one and only one point common to this series of intervals
+ and this is the point represented by the decimal
+\begin_inset Formula 
+\[
+a.a_{1}a_{2}a_{3}\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combining the results of this article with that of Ex.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "recurring"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "recurring"
+
+\end_inset
+
+, we see that 
+\emph on
+every decimal, finite or infinite, denotes a number which is rational if
+ the decimal is terminating or recurring and irrational in the contrary
+ case
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let, now, 
+\begin_inset Formula $P$
+\end_inset
+
+ lie on the negative side of 
+\emph on
+
+\begin_inset Formula $O$
+\end_inset
+
+
+\emph default
+.
+ Then the number representing it is
+\begin_inset Formula 
+\[
+-a.a_{1}a_{2}a_{3}\ldots
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+a.a_{1}a_{2}a_{3}\ldots
+\]
+
+\end_inset
+
+is the number representing the point 
+\begin_inset Formula $P'$
+\end_inset
+
+ on the positive side of 
+\begin_inset Formula $O$
+\end_inset
+
+ such that 
+\begin_inset Formula $PP'$
+\end_inset
+
+ is bisected at 
+\begin_inset Formula $O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "cuberoot2"
+
+\end_inset
+
+Calculate the cube root of
+\emph default
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\emph on
+to three decimal places
+\emph default
+.
+\end_layout
+
+\begin_layout Example
+We have 
+\begin_inset Formula 
+\[
+1^{3}=1<2\mbox{ and \ensuremath{2^{3}=8>2.}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\qquad1<\sqrt[3]{2}<2.
+\]
+
+\end_inset
+
+We consider the numbers
+\begin_inset Formula 
+\[
+1,1.1,1.2,\ldots,1.9,2,
+\]
+
+\end_inset
+
+which divide the interval 
+\begin_inset Formula $[1,2]$
+\end_inset
+
+ into 
+\begin_inset Formula $10$
+\end_inset
+
+ equal parts and find two successive numbers such that the cube of the first
+ is 
+\begin_inset Formula $<2$
+\end_inset
+
+ and of the second is 
+\begin_inset Formula $>2$
+\end_inset
+
+.
+ We find that
+\begin_inset Formula 
+\[
+\left(1.2\right)^{3}=1.728<2\mbox{ and \ensuremath{\left(1.3\right)^{3}=2.197>2.}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\qquad1.2<\sqrt[3]{2}<1.3.
+\]
+
+\end_inset
+
+Again consider the numbers
+\begin_inset Formula 
+\[
+1.2,1.21,1.22,\ldots,1.29,1.3,
+\]
+
+\end_inset
+
+which divide the interval 
+\begin_inset Formula $[1.2,1.3]$
+\end_inset
+
+ into 
+\begin_inset Formula $10$
+\end_inset
+
+ equal parts.
+\begin_inset Newline newline
+\end_inset
+
+We find that
+\begin_inset Formula 
+\[
+\left(1.25\right)^{3}=1.953125<2\mbox{ and \ensuremath{\left(1.26\right)^{3}=2.000376>2.}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\qquad1.25<\sqrt[3]{2}<1.26.
+\]
+
+\end_inset
+
+Again, the numbers
+\begin_inset Formula 
+\[
+1.25,1.251,1.252,\ldots,1.259,1.26
+\]
+
+\end_inset
+
+divide the interval 
+\begin_inset Formula $[1.25,1.26]$
+\end_inset
+
+ into 
+\begin_inset Formula $10$
+\end_inset
+
+ equal parts
+\begin_inset Newline newline
+\end_inset
+
+We find that
+\begin_inset Formula 
+\[
+\left(1.259\right)^{3}=1.995616979<2\mbox{ and \ensuremath{\left(1.26\right)^{3}=2.000376>2.}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\qquad1.259<\sqrt[3]{2}<1.26.
+\]
+
+\end_inset
+
+Hence
+\begin_inset Formula 
+\[
+\sqrt[3]{2}=1.259\ldots
+\]
+
+\end_inset
+
+Thus to three decimal places, we have 
+\begin_inset Formula 
+\[
+\sqrt[3]{2}=1.259
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Calculate the cube root of 
+\begin_inset Formula $5$
+\end_inset
+
+ to 
+\begin_inset Formula $2$
+\end_inset
+
+ decimal places.
+\end_layout
+
+\begin_layout Note*
+The method described above in Ex.
+\begin_inset Formula $\,$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cuberoot2"
+
+\end_inset
+
+ which is indeed very cumbersome, has only been given to illustrate the
+ basic and elementary nature or the problem.
+ In actual practice, however, other methods involving infinite series or
+ other limiting processes are employed.
+\end_layout
+
+\begin_layout Section
+The modulus of a real number.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+By the modulus of a real number
+\emph default
+, 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\emph on
+is meant the number
+\emph default
+ 
+\begin_inset Formula $x,-x$
+\end_inset
+
+ or 
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\emph on
+according as
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\emph on
+is positive, negative, or zero
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Notation.
+ 
+\series default
+\emph on
+The symbol
+\emph default
+ 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ 
+\emph on
+is used to denote the modulus of
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Thus the modulus of a number means the same thing as its 
+\emph on
+numerical
+\emph default
+ or 
+\emph on
+absolute value
+\emph default
+.
+ For example, we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|3\right| & = & 3;\,\left|-3\right|=3;\,\left|0\right|=0;\\
+\left|5-7\right| & = & \left|7-5\right|=2.
+\end{eqnarray*}
+
+\end_inset
+
+The modulus of the difference between two numbers is the measure of the
+ distance between the corresponding points on the number-axis.
+\end_layout
+
+\begin_layout Subsection*
+Some results involving moduli.
+\end_layout
+
+\begin_layout Subsection
+Modulus of a sum.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|a+b\right|\leq\left|a\right|+\left|b\right|,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+i.e., the modulus of the sum of two numbers is less than or equal to the sum
+ of their moduli.
+\end_layout
+
+\begin_layout Standard
+The result is almost self-evident.
+ To see this more clearly, we split it up into two cases giving examples
+ of each.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Case I
+\emph default
+.
+ 
+\emph on
+Let
+\emph default
+ 
+\begin_inset Formula $a,b$
+\end_inset
+
+ 
+\emph on
+have the same sign
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+In this case, we clearly have
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|a+b\right| & = & \left|a\right|+\left|b\right|.\\
+\mbox{\emph{e.g.,}}\qquad\left|7+3\right| & = & \left|7\right|+\left|3\right|,\\
+\mbox{and}\qquad\left|-7-3\right| & = & \left|-7\right|+\left|-3\right|.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Case II
+\emph default
+.
+ 
+\emph on
+Let
+\emph default
+ 
+\begin_inset Formula $a,b$
+\end_inset
+
+ 
+\emph on
+have the opposite sign
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+In this case, we clearly have
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|a+b\right| & < & \left|a\right|+\left|b\right|.\\
+\mbox{\emph{e.g.,}}\qquad4=\left|7-3\right| & < & \left|7\right|+\left|3\right|=10.
+\end{eqnarray*}
+
+\end_inset
+
+Thus in either case, we have
+\begin_inset Formula 
+\[
+\left|a+b\right|\leq\left|a\right|+\left|b\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modulus of a product.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|ab\right|=\left|a\right|\left|b\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+i.e., the modulus of the product of two numbers is equal to the product of
+ their moduli.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mbox{\emph{e.g.,}}\qquad\left|4\cdot3\right| & = & 12=\left|4\right|\cdot\left|3\right|;\\
+\left|\left(-4\right)\cdot\left(-3\right)\right| & = & 12=\left|\left(-4\right)\right|\cdot\left|\left(-3\right)\right|;\\
+\left|\left(-4\right)\cdot\left(3\right)\right| & = & 12=\left|\left(-4\right)\right|\cdot\left|3\right|.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modulus inequality.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+If
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula $,a$
+\end_inset
+
+ and 
+\begin_inset Formula $l$
+\end_inset
+
+ 
+\emph on
+be three numbers such that
+\emph default
+
+\begin_inset Formula 
+\begin{equation}
+\left|x-a\right|<l,\label{eq:A}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+then
+\emph default
+
+\begin_inset Formula 
+\[
+\left(a-l\right)<x<\left(a+l\right)
+\]
+
+\end_inset
+
+
+\emph on
+i.e., 
+\begin_inset Formula $x$
+\end_inset
+
+ lies between 
+\begin_inset Formula $a-l$
+\end_inset
+
+ and 
+\begin_inset Formula $a+l$
+\end_inset
+
+ or that 
+\begin_inset Formula $x$
+\end_inset
+
+ belongs to the open interval 
+\begin_inset Formula $\left(a-l,a+l\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The inequality 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A"
+
+\end_inset
+
+ implies that the numerical difference between 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ must be less than 
+\begin_inset Formula $l$
+\end_inset
+
+, so that the point 
+\begin_inset Formula $x$
+\end_inset
+
+ (which may be to the right or to the left of 
+\begin_inset Formula $a$
+\end_inset
+
+) can, at the most, be at a distance 
+\begin_inset Formula $l$
+\end_inset
+
+ from the point 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{wrapfigure}{l}{0.3
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue](-1.75,0)--(1.75,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (-1,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-1,0) node[below] {$a-l$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (0,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+draw (0,0) node[below]{$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path (0,0) ++(0,-0.29) node {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (1,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1,0) node[below] {$a+l$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$
+\backslash
+left|x-a
+\backslash
+right|<l$}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:modineq}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{wrapfigure}
+\end_layout
+
+\end_inset
+
+Now, from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Fig.~
+\backslash
+ref{fig:modineq}
+\end_layout
+
+\end_inset
+
+ , we clearly see that this is possible, if and only 
+\begin_inset Formula $x$
+\end_inset
+
+ lies between 
+\begin_inset Formula $a-l$
+\end_inset
+
+ and 
+\begin_inset Formula $a+l$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It may also be at once seen that
+\begin_inset Formula 
+\[
+\left|x-a\right|\leq l
+\]
+
+\end_inset
+
+is equivalent to saying that, 
+\begin_inset Formula $x$
+\end_inset
+
+, belongs to the closed interval
+\begin_inset Formula 
+\[
+[a-l,a+l].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+If
+\emph default
+ 
+\begin_inset Formula $\left|a-b\right|<l,$
+\end_inset
+
+
+\begin_inset Formula $\left|b-c\right|<m$
+\end_inset
+
+, 
+\emph on
+show that
+\emph default
+
+\begin_inset Formula 
+\[
+\left|a-c\right|<l+m.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+We have 
+\begin_inset Formula $\left|a-c\right|=\left|a-b+b-c\right|\leq\left|a-b\right|+\left|b-c\right|<l+m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Give the equivalents of the following in terms of the modulus notation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[c]{1.2
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+emph{
+\backslash
+roman*})
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $-1\leq x\leq3.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2<x<5.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-3\leq x\leq7.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $l-\varepsilon<x<l+\varepsilon.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Give the equivalents of the following by doing away with the modulus notation
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[c]{
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+emph{
+\backslash
+roman*})
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left|x-2\right|<3.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x+1\right|\leq2.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0<\left|x-1\right|<2.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+If 
+\begin_inset Formula $y=\left|x\right|+\left|x-1\right|,$
+\end_inset
+
+ then show that
+\begin_inset Formula 
+\[
+y=\begin{cases}
+1-2x, & \textrm{for }x\leq0,\\
+1, & \textrm{for }0<x<1,\\
+2x-1, & \textrm{for}\mbox{ }x\geqq1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{refsection} % refsection environment 
+\end_layout
+
+\begin_layout Plain Layout
+
+%Citation section 
+\backslash
+thesection: 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{gibson1966advanced,narayan1962differential} 
+\end_layout
+
+\begin_layout Plain Layout
+
+% collect citations 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography[heading=subbibliography] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% print section bibliography 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{refsection} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
