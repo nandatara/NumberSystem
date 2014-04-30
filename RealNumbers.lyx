@@ -43,6 +43,7 @@ eqs-within-sections
 theorems-ams-bytype
 theorems-ams-extended-bytype
 enumitem
+theorems-chap-bytype
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -414,6 +415,15 @@ LatexCommand tableofcontents
 
 \begin_layout Chapter
 Real Numbers
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+The foundation on which the structure of higher analysis rests is the theory
+ of real numbers.
+ Any strict treatment of the foundations of the differential and integral
+ calculus and of related subjects must inevitably start from there.
 \end_layout
 
 \begin_layout Section*
@@ -3385,6 +3395,1885 @@ thesection:
 
 \backslash
 nocite{gibson1966advanced,narayan1962differential} 
+\end_layout
+
+\begin_layout Plain Layout
+
+% collect citations 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography[heading=subbibliography] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% print section bibliography 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{refsection} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+ Rational Numbers
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+No science rests entirely within itself : each borrows the strength of its
+ ultimate foundations from strata above or below it, such as experience,
+ or theory of knowledge, or logic, or metaphysics, .
+ .
+ .
+ Every science must accept something as simply given, and on that it may
+ proceed to build.
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+We propose to regard at once as known (or “given”, or “secured”) a group
+ of data whose deducibility from a smaller body of assumptions is familiar
+ to everyone — namely, the 
+\emph on
+system of rational numbers
+\emph default
+, i.e.
+ of numbers integral and fractional, positive and negative, including zero.
+ Speaking broadly, it is a matter of common knowledge how this system may
+ be constructed, if — as a smaller body of assumptions — only the ordered
+ sequence of natural numbers 
+\begin_inset Formula $1,2,3,...$
+\end_inset
+
+ , and their combinations by addition and multiplication, are regarded as
+ “given”.
+\end_layout
+
+\begin_layout Section
+Properties of Rational numbers.
+\end_layout
+
+\begin_layout Subsection*
+Order Properties.
+\end_layout
+
+\begin_layout Standard
+Rational numbers form an ordered aggregate; meaning that between any two,
+ say 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, one and only one of the three relations 
+\begin_inset Formula 
+\[
+a<b,\; a=b,\; a>b
+\]
+
+\end_inset
+
+ necessarily holds.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:florder"
+
+\end_inset
+
+Fundamental Laws of Order.
+\end_layout
+
+\begin_layout Enumerate
+Invariably 
+\begin_inset Formula $a=a.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=b$
+\end_inset
+
+ always implies 
+\begin_inset Formula $b=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=b,b=c$
+\end_inset
+
+ implies 
+\begin_inset Formula $a=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\leq b,b<c$
+\end_inset
+
+, --- or 
+\begin_inset Formula $a<b,b\leq c,$
+\end_inset
+
+ --- implies 
+\begin_inset Formula $a<c.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:fla"
+
+\end_inset
+
+Fundamental Laws of Arithmetic.
+\end_layout
+
+\begin_layout Standard
+Any two rational numbers may be combined in four distinct ways, referred
+ to respectively as the four processes (or basic operations) of Addition,
+ Subtraction, Multiplication, and Division.
+ These operations can always be carried out to one definite result, with
+ the single exception of division by 
+\begin_inset Formula $0$
+\end_inset
+
+, which is undefined and should be regarded as an entirely impossible or
+ meaningless process; the four processes also obey a number of simple laws,
+ the so-called 
+\emph on
+Fundamental Laws of Arithmetic
+\emph default
+, and further rules deducible therefrom.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Addition.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Every
+\emph default
+ pair of numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ has invariably associated with it a third, 
+\begin_inset Formula $c$
+\end_inset
+
+, called their sum and denoted by 
+\begin_inset Formula $a+b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=a',b=b'$
+\end_inset
+
+ always imply 
+\begin_inset Formula $a+b=a'+b'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Invariably, 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+ (Commutative Law).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Invariably, 
+\begin_inset Formula $(a+b)+c=a+(b+c)$
+\end_inset
+
+ (Associative Law).
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b$
+\end_inset
+
+ always implies 
+\begin_inset Formula $a+c<b+c$
+\end_inset
+
+ (Law of Monotony).
+\end_layout
+
+\begin_layout Subsection*
+Subtraction.
+\end_layout
+
+\begin_layout Standard
+To every pair of numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ there corresponds a third number 
+\begin_inset Formula $c$
+\end_inset
+
+, such that 
+\begin_inset Formula $a+c=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Multiplication.
+\end_layout
+
+\begin_layout Enumerate
+To every pair of numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ there corresponds a third number 
+\begin_inset Formula $c$
+\end_inset
+
+, called their product and denoted by 
+\begin_inset Formula $ab$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=a',b=b'$
+\end_inset
+
+always implies 
+\begin_inset Formula $ab=a'b'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In all cases 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+ (Commutative Law).
+ 
+\end_layout
+
+\begin_layout Enumerate
+In all cases 
+\begin_inset Formula $(ab)c=a(bc)$
+\end_inset
+
+ (Associative Law).
+ 
+\end_layout
+
+\begin_layout Enumerate
+In all cases 
+\begin_inset Formula $(a+b)c=ac+bc$
+\end_inset
+
+ (Distributive Law).
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b$
+\end_inset
+
+ implies, provided 
+\begin_inset Formula $c$
+\end_inset
+
+ is positive, 
+\begin_inset Formula $ac>bc$
+\end_inset
+
+ (Law of Monotony).
+\end_layout
+
+\begin_layout Subsection*
+Division.
+\end_layout
+
+\begin_layout Standard
+To every pair of numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ of which the first is not 
+\begin_inset Formula $0$
+\end_inset
+
+ there corresponds a third number 
+\begin_inset Formula $c$
+\end_inset
+
+, such that 
+\begin_inset Formula $ac=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+All the known rules of arithmetic, — and hence ultimately all mathematical
+ results, — are deduced from these few laws, with the help of the laws of
+ pure logic alone.
+ Among these laws, one is distinguished by its primarily mathematical character,
+ namely the
+\end_layout
+
+\begin_layout Subsection*
+Law of Induction.
+\end_layout
+
+\begin_layout Standard
+This may be reckoned among the fundamental laws of arithmetic and is normally
+ stated as follows: 
+\end_layout
+
+\begin_layout Standard
+If a set of natural numbers 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ includes the number 
+\begin_inset Formula $1$
+\end_inset
+
+, and if, every time a certain natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ and all those less than 
+\begin_inset Formula $n$
+\end_inset
+
+ can be taken to belong to the aggregate, the number 
+\begin_inset Formula $(n+1)$
+\end_inset
+
+ may be inferred also to belong to it, then 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ includes all the natural numbers.
+ 
+\end_layout
+
+\begin_layout Standard
+This law of induction itself follows quite easily from the following theorem,
+ which appears even more obvious and is therefore normally called the fundamenta
+l law of the natural numbers:
+\end_layout
+
+\begin_layout Subsection*
+Law of Natural Numbers.
+\end_layout
+
+\begin_layout Standard
+In every set of natural numbers that is not “empty” there is always a number
+ less than all the rest.
+\end_layout
+
+\begin_layout Standard
+For if, according to the hypotheses of the Induction Law, we consider the
+ set 
+\begin_inset Formula $\mathfrak{N}$
+\end_inset
+
+ of natural numbers not belonging to 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ , this set must be “empty”, that is, 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ must contain all the natural numbers.
+ For otherwise, by the law of the natural numbers, 
+\begin_inset Formula $\mathfrak{N}$
+\end_inset
+
+ would include a number less than all the rest.
+ This least number would exceed 
+\begin_inset Formula $1$
+\end_inset
+
+, for it was assumed that 
+\begin_inset Formula $1$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+; hence it could be denoted by 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $n$
+\end_inset
+
+ would belong to 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+, but 
+\begin_inset Formula $(n+1)$
+\end_inset
+
+ would not, which contradicts the hypotheses in the law of induction.
+\end_layout
+
+\begin_layout Standard
+In applications it is usually an advantage to be able to make statements
+ not merely about the natural numbers but about any whole numbers.
+ The laws then take the following forms, obviously equivalent to those above:
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Law of Induction
+\emph default
+.
+ If a statement involves a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ (e.
+ g.
+ “if 
+\begin_inset Formula $n\geqq10$
+\end_inset
+
+, then 
+\begin_inset Formula $2n>n^{3}$
+\end_inset
+
+”, or the like) and if 
+\end_layout
+
+\begin_layout Standard
+a) this statement is correct for n = p, and 
+\end_layout
+
+\begin_layout Standard
+b) its correctness for 
+\begin_inset Formula $n=p,p+1,\ldots,k$
+\end_inset
+
+ (where 
+\begin_inset Formula $k$
+\end_inset
+
+ is any natural number 
+\begin_inset Formula $\geqq p$
+\end_inset
+
+) always implies its correctness for 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+, then the statement is correct for every natural number 
+\begin_inset Formula $\geq p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Law of Integers
+\emph default
+.
+ In every set of integers all 
+\begin_inset Formula $\geq p$
+\end_inset
+
+ that is not “empty”, there is always a number less than all the rest.
+\end_layout
+
+\begin_layout Standard
+We will lastly mention a theorem susceptible, in the domain of rational
+ numbers, of immediate proof, although it becomes axiomatic in character
+ very soon after this domain is left.
+\end_layout
+
+\begin_layout Subsection*
+Theorem of Eudoxus.
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Theorem-of-Eudoxus."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are any two positive rational numbers, then a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ always exists such that 
+\begin_inset Formula $nb>a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The four ways of combining two rational numbers give in every case as the
+ result another rational number.
+ In this sense the system of rational numbers forms a closed aggregate.
+ This property of forming a closed system with respect to the four rules
+ is obviously not possessed by the aggregate of all natural numbers, or
+ of all positive and negative integers.
+ These are, so to speak, too sparsely sown to meet all the demands which
+ the four rules make upon them.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+This closed aggregate of all rational numbers and the laws which hold in
+ it, are then all that we regard as given, known, secured.
+\end_layout
+
+\begin_layout Subsection
+Inequalities.
+\end_layout
+
+\begin_layout Standard
+The following all follows from the laws of order and monotony.
+ In particular 
+\end_layout
+
+\begin_layout Enumerate
+The statements in the laws of monotony are reversible; e.
+ g.
+ 
+\begin_inset Formula $a+c<b+c$
+\end_inset
+
+ always implies 
+\begin_inset Formula $a<b$
+\end_inset
+
+; and so does 
+\begin_inset Formula $ac<bc$
+\end_inset
+
+, provided 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b,c<d$
+\end_inset
+
+ always implies 
+\begin_inset Formula $a+c<b+d$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b,c<d$
+\end_inset
+
+ implies, provided 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are positive, 
+\begin_inset Formula $ac<bd$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b$
+\end_inset
+
+ always implies 
+\begin_inset Formula $-b<-a$
+\end_inset
+
+, and also, provided 
+\begin_inset Formula $a$
+\end_inset
+
+ is positive, 
+\begin_inset Formula $\frac{1}{b}<\frac{1}{a}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Also these theorems, as well as the laws of order and monotony, hold (with
+ appropriate modifications ) when the signs “
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ , “
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, “
+\begin_inset Formula $\geqq$
+\end_inset
+
+”, are substituted for “
+\begin_inset Formula $<$
+\end_inset
+
+“, provided we maintain the assumptions that 
+\begin_inset Formula $c,b$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+ are positive, in 
+\begin_inset Formula $1,3,$
+\end_inset
+
+ and 
+\begin_inset Formula $4$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Subsection
+Absolute values.
+\end_layout
+
+\begin_layout Definition
+By 
+\begin_inset Formula $\left|a\right|,$
+\end_inset
+
+ the 
+\emph on
+absolute value
+\emph default
+ (or 
+\emph on
+modulus
+\emph default
+) of 
+\begin_inset Formula $a$
+\end_inset
+
+, is meant that one of the two numbers 
+\begin_inset Formula $+a$
+\end_inset
+
+ and 
+\begin_inset Formula $-a$
+\end_inset
+
+ which is positive, supposing 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+; and the number 
+\begin_inset Formula $0$
+\end_inset
+
+, if 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+ (Hence 
+\begin_inset Formula $\left|0\right|=0$
+\end_inset
+
+ and if 
+\begin_inset Formula $a\neq0,\left|a\right|>0$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+The following theorems hold, amongst others:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|a\right|=\left|-a\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|ab\right|=\left|a\right|\cdot\left|b\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\frac{1}{a}\right|=\frac{1}{\left|a\right|}$
+\end_inset
+
+; 
+\begin_inset Formula $\left|\frac{b}{a}\right|=\frac{\left|b\right|}{\left|a\right|}$
+\end_inset
+
+, provided 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|a+b\right|\leq\left|a\right|+\left|b\right|$
+\end_inset
+
+; 
+\begin_inset Formula $\left|a+b\right|\geq\bigl|\left|a\right|-\left|b\right|\bigr|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The two relations 
+\begin_inset Formula $\left|a\right|<r$
+\end_inset
+
+ and 
+\begin_inset Formula $-r<a<r$
+\end_inset
+
+ are exactly equivalent; similarly for 
+\begin_inset Formula $\left|x-a\right|<r$
+\end_inset
+
+ and 
+\begin_inset Formula $a-r<x<a+r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|a-b\right|$
+\end_inset
+
+ is the 
+\emph on
+distance
+\emph default
+ between the 
+\emph on
+points
+\emph default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, with the representation of numbers on a straight line described immediately
+ below.
+\end_layout
+
+\begin_layout Proof
+of the first relation in 4: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pm a & \leq & \left|a\right|\\
+\pm b & \leq & \left|b\right|
+\end{eqnarray*}
+
+\end_inset
+
+adding the two inequalities gives
+\begin_inset Formula 
+\[
+\pm\left(a+b\right)\leq\left|a\right|+\left|b\right|,
+\]
+
+\end_inset
+
+and hence 
+\begin_inset Formula $\left|a+b\right|\leq\left|a\right|+\left|b\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Representation of rational numbers by points along a line.
+\end_layout
+
+\begin_layout Standard
+The mode of representing rational numbers by points along a line or by segments
+ of a line, which may be known as the 
+\emph on
+number axis
+\emph default
+, will now be explained.
+ 
+\begin_inset Newline newline
+\end_inset
+
+We start with marking an arbitrary point 
+\begin_inset Formula $O$
+\end_inset
+
+ on the number axis and calling it the 
+\emph on
+origin
+\emph default
+ or zero point.
+ The number zero will be represented by the point 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The point 
+\begin_inset Formula $O$
+\end_inset
+
+ divides the number axis into two parts or sides.
+ Any one of these may be called positive and the other, then negative.
+ Usually, the number axis is drawn parallel to the printed lines of the
+ page and the right hand side of 
+\begin_inset Formula $O$
+\end_inset
+
+ is termed positive and the left hand side of 
+\begin_inset Formula $O$
+\end_inset
+
+ negative.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{wrapfigure}{l}{0.3
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{center}     
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=0.48
+\backslash
+textwidth]{gull}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{center}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,blue,->](0,0)--(3.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (0,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0) node[below]{$O$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[fill,red] (1.75,0) circle(1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.75,0) node[below] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Number Line}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{wrapfigure}
+\end_layout
+
+\end_inset
+
+On the positive side, we take an arbitrary length 
+\begin_inset Formula $OA$
+\end_inset
+
+, and call it the 
+\emph on
+unit
+\emph default
+ length.
+ 
+\begin_inset Newline newline
+\end_inset
+
+We say, then, that the number 
+\begin_inset Formula $1$
+\end_inset
+
+ is represented by the point 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+After having fixed an 
+\emph on
+origin
+\emph default
+, 
+\emph on
+positive sense
+\emph default
+ and a 
+\emph on
+unit length
+\emph default
+ on the number axis in the manner indicated above, we are in a position
+ to determine a point representing any given rational number as explained
+ below :--
+\end_layout
+
+\begin_layout Subsubsection*
+Positive integers.
+\end_layout
+
+\begin_layout Standard
+Firstly, we consider any positive integer, 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ We take a point on the positive side of the line such that its distance
+ from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+ times the unit length 
+\begin_inset Formula $OA$
+\end_inset
+
+.
+ This point will be reached by measuring successively 
+\begin_inset Formula $m$
+\end_inset
+
+ steps each equal to 
+\begin_inset Formula $OA$
+\end_inset
+
+ starting from 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ This point, then, is said to represent the positive integer, 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Negative integers.
+\end_layout
+
+\begin_layout Standard
+To represent a negative integer,
+\begin_inset Formula $-m$
+\end_inset
+
+, we take a point on the negative side of 
+\begin_inset Formula $O$
+\end_inset
+
+ such that its distance from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+ times the unit length 
+\begin_inset Formula $OA$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This point represents the negative integer, 
+\begin_inset Formula $-m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Fractions.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, let 
+\begin_inset Formula $p/q$
+\end_inset
+
+ be any fraction ; 
+\begin_inset Formula $q$
+\end_inset
+
+ being a positive integer.
+ Let 
+\begin_inset Formula $OA$
+\end_inset
+
+ be divided into 
+\begin_inset Formula $q$
+\end_inset
+
+ equal parts; 
+\begin_inset Formula $OB$
+\end_inset
+
+ being one of them.
+ We take a point on the positive or negative side of 
+\begin_inset Formula $O$
+\end_inset
+
+ according as 
+\begin_inset Formula $p$
+\end_inset
+
+ is positive or negative such that its distance from 
+\begin_inset Formula $O$
+\end_inset
+
+ is 
+\begin_inset Formula $p$
+\end_inset
+
+ times (or, 
+\begin_inset Formula $-p$
+\end_inset
+
+ times if 
+\begin_inset Formula $p$
+\end_inset
+
+ is negative) the distance 
+\begin_inset Formula $OB$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The point so obtained represents the fraction, 
+\begin_inset Formula $p/q$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+If a point 
+\begin_inset Formula $P$
+\end_inset
+
+ represents a rational number 
+\begin_inset Formula $p/q$
+\end_inset
+
+, then the measure of the length 
+\begin_inset Formula $OP$
+\end_inset
+
+ is clearly 
+\begin_inset Formula $p/q$
+\end_inset
+
+ or 
+\begin_inset Formula $-p/q$
+\end_inset
+
+ according as the number is positive or negative.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Sometimes we say that the number 
+\begin_inset Formula $p/q$
+\end_inset
+
+ is represented by the segment 
+\begin_inset Formula $OP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ordered-Fields."
+
+\end_inset
+
+Ordered Fields.
+\end_layout
+
+\begin_layout Standard
+We shall now regard the description of these foundations as characterizing
+ the 
+\series bold
+\emph on
+concept of number
+\series default
+\emph default
+; in other words, we shall call any system of conceptually well-distinguished
+ objects (elements, symbols) a 
+\emph on
+number system
+\emph default
+, and its elements 
+\series bold
+\emph on
+numbers
+\series default
+\emph default
+, if— to put it quite briefly for the moment — we can operate with them
+ in essentially the same ways as we do with rational numbers.
+ 
+\end_layout
+
+\begin_layout Standard
+We proceed to give this somewhat inaccurate statement a precise formulation.
+ 
+\end_layout
+
+\begin_layout Standard
+We consider a 
+\emph on
+system
+\emph default
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ of well-distinguished objects, which we denote by 
+\begin_inset Formula $\alpha,\beta,\ldots$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ will be called a 
+\emph on
+number system
+\emph default
+ and its elements 
+\begin_inset Formula $\alpha,\beta,\ldots$
+\end_inset
+
+ will be called 
+\emph on
+numbers
+\emph default
+ if, besides being capable of definition exclusively by means of rational
+ numbers (i.
+ e.
+ ultimately by means of natural numbers alone), these symbols 
+\begin_inset Formula $\alpha,\beta,\ldots$
+\end_inset
+
+ satisfy the following four conditions: 
+\end_layout
+
+\begin_layout Enumerate
+Between any two elements 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ one and only one of the three relations
+\begin_inset Formula 
+\begin{equation}
+\alpha<\beta,\:\alpha=\beta,\:\alpha>\beta\label{eq:order}
+\end{equation}
+
+\end_inset
+
+necessarily holds (this is expressed briefly by saying that 
+\begin_inset Formula $S$
+\end_inset
+
+ is an 
+\emph on
+ordered system
+\emph default
+) and these 
+\emph on
+relations of order
+\emph default
+ between the elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ are subject to the same fundamental laws (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sub:florder"
+
+\end_inset
+
+) as their analogues in the system of rational numbers.
+\end_layout
+
+\begin_layout Enumerate
+Four distinct methods of combining any two elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ are defined, called Addition, Subtraction, Multiplication and Division.
+ With a single exception, to be mentioned immediately (see 3.
+ below), these processes can always be carried out to one definite result,
+ and obey the same Fundamental Laws (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sub:fla"
+
+\end_inset
+
+), as their analogues in the system of the rational numbers .
+ (The “zero” of the system, which must be known in order that the elements
+ can be divided into positive and negative, is to be defined as explained
+ in footnote below.)
+\end_layout
+
+\begin_layout Enumerate
+With every rational number we can associate an element of 
+\begin_inset Formula $S$
+\end_inset
+
+ (and all others “equal” to it) in such a manner that, if 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ denote rational numbers, 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ their associates from 
+\begin_inset Formula $S$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:order"
+
+\end_inset
+
+ holding between 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is of the same form as that holding between 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+the element resulting from a combination of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ (i.
+ e.
+ 
+\begin_inset Formula $\alpha+\beta,\alpha-\beta,\alpha\cdot\beta,\textrm{ or }\alpha\div\beta$
+\end_inset
+
+ respectively) has for its associated rational number the result of the
+ similar combination of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ (i.
+ e.
+ 
+\begin_inset Formula $a+b,a-b,a\cdot b,$
+\end_inset
+
+ or 
+\begin_inset Formula $a\div b$
+\end_inset
+
+) .
+\begin_inset Newline newline
+\end_inset
+
+[This is also expressed, more shortly, by saying that the system 
+\begin_inset Formula $S$
+\end_inset
+
+ contains a sub-system 
+\begin_inset Formula $S'$
+\end_inset
+
+ 
+\series bold
+\emph on
+similar
+\series default
+\emph default
+ and 
+\series bold
+\emph on
+isomorphic
+\series default
+\emph default
+ to the system of rational numbers.
+ Such a sub-system is in fact constituted by those elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ which we have associated with rational numbers
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Two ordered systems are 
+\series bold
+\emph on
+similar
+\series default
+\emph default
+ if it is possible to associate each element of the one with an element
+ of the other in such a way that the same one of the relations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:order"
+
+\end_inset
+
+ as holds between two elements of the one system also holds between the
+ two associated elements of the other, they are 
+\series bold
+\emph on
+isomorphic
+\series default
+\emph default
+ relatively to the possible modes of combining their elements, if the element
+ resulting from a combination of two elements of the one system is associated
+ with that resulting from the similar combination of the two associated
+ elements of the other system.
+\end_layout
+
+\end_inset
+
+.]
+\begin_inset Newline newline
+\end_inset
+
+In such a correspondence, an element of 
+\begin_inset Formula $S$
+\end_inset
+
+ associated with the rational number zero, and all elements equal to it,
+ may be shortly referred to as the “zero” of the system of elements.
+ The exception mentioned in 2.
+ then relates to division by zero
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The third of the stipulations by means of which we here characterise the
+ concept of number is fulfilled, moreover, as a consequence of the first
+ and second.
+ For our purposes, this fact is not essential; but as it is significant
+ from a systematic point of view, we briefly indicate its proof as follows.
+ By §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ordered-Fields."
+
+\end_inset
+
+ 2 and §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:fla"
+
+\end_inset
+
+(subtraction), there is an element for which 
+\begin_inset Formula $\alpha+\zeta=\alpha$
+\end_inset
+
+.
+ From the fundamental laws of addition §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:fla"
+
+\end_inset
+
+, it then quite easily follows that 
+\emph on
+one and the same element
+\emph default
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $\alpha+\zeta=\alpha$
+\end_inset
+
+, for every 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ This element, with all elements equal to it, is called the 
+\emph on
+neutral
+\emph default
+ element relatively to the process of addition, or for brevity the ``zero''
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is different from this ``zero'', there is, further, an element 
+\begin_inset Formula $\theta$
+\end_inset
+
+ for which 
+\begin_inset Formula $\alpha\theta=\alpha$
+\end_inset
+
+; and it again appears thit this element is the same as that satisfying
+ 
+\begin_inset Formula $\beta\xi=\beta$
+\end_inset
+
+ for any other 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ This 
+\begin_inset Formula $\theta$
+\end_inset
+
+, with all elements equal to it, is called the 
+\emph on
+neutral
+\emph default
+ element relatively to the process of multiplication, or, briefly, the ``unit''
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ The elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ produced bv repeated addition or subtraction of this ``unit'', and any
+ others equal to them, are then called ``integers'' of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ All further elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ (and all equal to them) which result fiom these by the process of division
+ then form the sub-system 
+\begin_inset Formula $S'$
+\end_inset
+
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ in question; that it is 
+\emph on
+similar
+\emph default
+ and 
+\emph on
+isomorphic
+\emph default
+ to the system of all rational numbers is in fact easily deduced from §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ordered-Fields."
+
+\end_inset
+
+ 1 and §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ordered-Fields."
+
+\end_inset
+
+ 2.
+ Thus, as asserted, our concept of number is already determined by the requireme
+nts of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ordered-Fields."
+
+\end_inset
+
+ 1, 2 and 4.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For any two elements 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ both standing in the relation “
+\begin_inset Formula $>$
+\end_inset
+
+“ to the “zero” of the system, there exists a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ for which 
+\begin_inset Formula $n\beta>\alpha$
+\end_inset
+
+.
+ Here 
+\begin_inset Formula $n\beta$
+\end_inset
+
+ denotes the sum 
+\begin_inset Formula $\beta+\beta+\cdots+\beta$
+\end_inset
+
+ containing the element 
+\begin_inset Formula $\beta$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ times.
+ (
+\series bold
+\emph on
+Postulate of Eudoxus
+\series default
+\emph default
+; cf.
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sub:Theorem-of-Eudoxus."
+
+\end_inset
+
+) 
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{refsection} % refsection environment 
+\end_layout
+
+\begin_layout Plain Layout
+
+%Citation section 
+\backslash
+thesection: 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{knopp1928theory} 
 \end_layout
 
 \begin_layout Plain Layout
