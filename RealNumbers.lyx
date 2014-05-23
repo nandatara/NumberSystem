@@ -26,7 +26,7 @@ eprint=false,
 \usepackage[font=small,labelfont=bf,figurename=Fig.]{caption}
 
 %\nocite{*}
-\addbibresource{analysis.bib}
+\addbibresource{Z:/Lyx/Docs/analysis.bib}
 %\setsecheadstyle{\phantomsection\Large\scshape\MakeLowercase} 
 %\setsubsecheadstyle{\phantomsection\normalsize\bfseries} 
 %\setsubsubsecheadstyle{\phantomsection\small\bfseries}
@@ -443,6 +443,27 @@ Rational numbers can be represented by points on a line.
  sections.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "analysis"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Rational numbers.
 \end_layout
@@ -727,11 +748,11 @@ name "enu:excep"
 
 
 \begin_inset Argument
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3427,7 +3448,7 @@ end{refsection}
 \end_layout
 
 \begin_layout Chapter
- Rational Numbers
+Rational Numbers
 \end_layout
 
 \begin_layout Quote
@@ -5253,7 +5274,7 @@ reference "sub:Theorem-of-Eudoxus."
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -5298,6 +5319,1942 @@ printbibliography[heading=subbibliography]
 
 \backslash
 end{refsection} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Axiomatic Foundation of Real Numbers
+\end_layout
+
+\begin_layout Quote
+Mathematics 
+\emph on
+proceeds by deductive reasoning from explicitly stated axioms.
+ The axioms concerning numbers are such obvious properties that we use them
+ automatically without realizing that we are doing so.
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+To understand the deductive process in the mathematics of numbers, as well
+ as in geometry, we must recognize the existence and use of the axioms.
+ We do not hesitate to say that 
+\emph default
+
+\begin_inset Formula $275+384=384+275$
+\end_inset
+
+.
+ 
+\emph on
+Surely we did not add
+\emph default
+ 
+\begin_inset Formula $384$
+\end_inset
+
+ 
+\emph on
+objects
+\emph default
+ 
+\emph on
+to
+\emph default
+ 
+\begin_inset Formula $275$
+\end_inset
+
+, 
+\emph on
+count the total, then add
+\emph default
+ 
+\begin_inset Formula $275$
+\end_inset
+
+ 
+\emph on
+objects to
+\emph default
+ 
+\begin_inset Formula $384$
+\end_inset
+
+, 
+\emph on
+count that total, and check that the two totals agree.
+ Rather, whenever in our experience we combined two groups of objects, we
+ found that we obtained the same total collection regardless of whether
+ we put the first group with the second or the second with the first.
+ Of course, our evidence to the effect that the order of addition is immaterial
+ is limited to a small number of cases, whereas in practice we use this
+ fact with all numbers.
+ Hence, we are really making an assumption, namely, that for any two numbers
+\emph default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph on
+and
+\emph default
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\emph on
+integral, fractional, irrational, and negative, the order of addition will
+ not affect the result.
+ Thus our assumption also includes the affirmation that
+\emph default
+ 
+\begin_inset Formula $\sqrt{3}+\sqrt{5}=\sqrt{5}+\sqrt{3}$
+\end_inset
+
+.
+ 
+\emph on
+It is important for another reason to recognize that this assumption is
+ being made.
+ Numbers are not apples or cows.
+ They are abstractions from physical situations.
+ 
+\emph default
+Mathematics
+\emph on
+ works with these abstractions in order to deduce information about physical
+ situations.
+ However, if the axioms are not well chosen, the deductions will not apply.
+ Hence it is well to note what assumptions are being employed and to ascertain
+ that they are well founded in experience.
+\end_layout
+
+\begin_layout Section*
+Introduction.
+\end_layout
+
+\begin_layout Standard
+We define the whole set of real numbers at once as a set of elements equipped
+ with certain operations and relations which in turn satisfy four groups
+ of axioms.
+ The first group consists of the 
+\emph on
+addition axioms
+\emph default
+, the second of the 
+\emph on
+multiplication axioms
+\emph default
+, the third of the 
+\emph on
+order axioms
+\emph default
+, and the fourth of a single axiom called the 
+\emph on
+least upper bound axiom
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Axioms of Real Numbers.
+\end_layout
+
+\begin_layout Definition
+By the 
+\emph on
+real number system
+\emph default
+ 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ is meant the set whose elements 
+\begin_inset Formula $x,y,z,\ldots,$
+\end_inset
+
+ called 
+\emph on
+real numbers
+\emph default
+, satisfy the four groups of axioms given in 
+\begin_inset Newline newline
+\end_inset
+
+§ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-addition-axioms."
+
+\end_inset
+
+--
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Least-upper-bound"
+
+\end_inset
+
+.
+ The set 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ is often called the real line, with its elements in turn called 
+\emph on
+points
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:The-addition-axioms."
+
+\end_inset
+
+The addition axioms.
+\end_layout
+
+\begin_layout Standard
+To every pair of elements 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ there corresponds a (unique) element 
+\begin_inset Formula $x+y$
+\end_inset
+
+, called the sum of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, where the rule associating 
+\begin_inset Formula $x+y$
+\end_inset
+
+ with 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ has the following properties:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+alph*)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x+y=y+x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ (
+\emph on
+addition is commutative
+\emph default
+);
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(x+y)+z=x+(y+z)$
+\end_inset
+
+ for every 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ (
+\emph on
+addition is associative
+\emph default
+);
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Thus the expression 
+\begin_inset Formula $x+y+z$
+\end_inset
+
+ has a unique meaning.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ contains an element 
+\begin_inset Formula $0$
+\end_inset
+
+, called the 
+\emph on
+zero element
+\emph default
+, such that 
+\begin_inset Formula $x+0=x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+For every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ there exists an element 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+, called the 
+\emph on
+negative
+\emph default
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+, such that 
+\begin_inset Formula $x+y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:The-multiplication-axioms."
+
+\end_inset
+
+The multiplication axioms.
+\end_layout
+
+\begin_layout Standard
+To every pair of elements 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ there corresponds a (unique) element 
+\begin_inset Formula $x\cdot y$
+\end_inset
+
+, (or 
+\begin_inset Formula $xy$
+\end_inset
+
+) called the product of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, where the rule associating 
+\begin_inset Formula $xy$
+\end_inset
+
+ with 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ has the following properties:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+alph*)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $xy=yx$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ (
+\emph on
+multiplication is commutative
+\emph default
+);
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(xy)z=x(yz)$
+\end_inset
+
+ for every 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ (
+\emph on
+multiplication is associative
+\emph default
+);
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Thus the expression 
+\begin_inset Formula $xyz$
+\end_inset
+
+ has a unique meaning.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ contains an element 
+\begin_inset Formula $1$
+\end_inset
+
+, called the 
+\emph on
+unit element
+\emph default
+, such that 
+\begin_inset Formula $1\cdot x=x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+For every 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ there exists an element 
+\begin_inset Formula $u$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+, called the 
+\emph on
+reciprocal
+\emph default
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+, such that 
+\begin_inset Formula $xu=1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+The formula 
+\begin_inset Formula 
+\[
+x(y+z)=xy+xz
+\]
+
+\end_inset
+
+ holds for every 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ (
+\emph on
+multiplication is distributive over addition
+\emph default
+).
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:The-order-axioms."
+
+\end_inset
+
+The order axioms.
+\end_layout
+
+\begin_layout Standard
+For every pair of elements 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ one (or both) of the relations 
+\begin_inset Formula $x\leqslant y$
+\end_inset
+
+ (
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\emph on
+is less than or equal to
+\emph default
+ 
+\begin_inset Formula $y$
+\end_inset
+
+) or 
+\begin_inset Formula $y\leqslant x$
+\end_inset
+
+ holds, where 
+\begin_inset Formula $\leqslant$
+\end_inset
+
+ has the following properties:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+alph*)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leqslant x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+, and 
+\begin_inset Formula $x\leqslant y,y\leqslant x$
+\end_inset
+
+ together imply 
+\begin_inset Formula $x=y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x\leqslant y,y\leqslant z$
+\end_inset
+
+ then 
+\begin_inset Formula $x\leqslant z$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x\leqslant y$
+\end_inset
+
+, then 
+\begin_inset Formula $x+z\leqslant y+z$
+\end_inset
+
+ for every 
+\begin_inset Formula $z$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $0\leqslant x,0\leqslant y$
+\end_inset
+
+, then 
+\begin_inset Formula $0\leqslant xy$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The relation 
+\begin_inset Formula $x\leqslant y$
+\end_inset
+
+ can also be written in the form 
+\begin_inset Formula $y\geqq x$
+\end_inset
+
+ (
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\emph on
+is greater than or equal to
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $x\leqslant y$
+\end_inset
+
+ and 
+\begin_inset Formula $x≠y$
+\end_inset
+
+, we write 
+\begin_inset Formula $x<y$
+\end_inset
+
+ (
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\emph on
+is less than
+\emph default
+ 
+\begin_inset Formula $y$
+\end_inset
+
+) or 
+\begin_inset Formula $y>x$
+\end_inset
+
+ (
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\emph on
+is greater than
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Definition
+A set 
+\begin_inset Formula $E\subset\mathbf{\boldsymbol{R}}$
+\end_inset
+
+ is said to be 
+\emph on
+bounded from above
+\emph default
+ if there exists an element 
+\begin_inset Formula $z\in\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\leqslant z$
+\end_inset
+
+ for every 
+\begin_inset Formula $x\in E$
+\end_inset
+
+, a fact expressed concisely by writing 
+\begin_inset Formula $E\leqslant z$
+\end_inset
+
+.
+ Every number 
+\begin_inset Formula $z$
+\end_inset
+
+ with the above property relative to a set 
+\begin_inset Formula $E$
+\end_inset
+
+ is called an 
+\emph on
+upper bound
+\emph default
+ of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ An upper bound 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ of the set 
+\begin_inset Formula $E$
+\end_inset
+
+ is called the 
+\emph on
+least upper bound
+\emph default
+ of 
+\begin_inset Formula $E$
+\end_inset
+
+ if every other upper bound 
+\begin_inset Formula $z$
+\end_inset
+
+ of 
+\begin_inset Formula $E$
+\end_inset
+
+ is greater than or equal to 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ (why is 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ unique?).
+ The least upper bound of 
+\begin_inset Formula $E$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $\sup E$
+\end_inset
+
+ (from the Latin “supremum”).
+ We can now state the following
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Least-upper-bound"
+
+\end_inset
+
+Least upper bound axiom.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Every set 
+\begin_inset Formula $E\subset\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ which is bounded from above has a least upper bound.
+\end_layout
+
+\begin_layout Section
+Consequences of the Addition Axioms
+\end_layout
+
+\begin_layout Standard
+Our next task is to deduce various implications of the above axioms which
+ will be needed later.
+ We start with certain consequences of the addition axioms.
+ 
+\end_layout
+
+\begin_layout Theorem
+The system 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ contains a unique zero element.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $\mathbf{\boldsymbol{R}}$
+\end_inset
+
+ contains two zero elements 
+\begin_inset Formula $0_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $0_{2}$
+\end_inset
+
+.
+ Then it follows from Axioms a and c of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-addition-axioms."
+
+\end_inset
+
+ that 
+\begin_inset Formula 
+\[
+0_{2}=0_{2}+0_{1}=0_{1}+0_{2}=0_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Every element 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ has a unique negative.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ has two negatives 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+, so that 
+\begin_inset Formula $x+y_{1}=x+y_{2}=0$
+\end_inset
+
+.
+ Then it follows from Axioms a--c of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-addition-axioms."
+
+\end_inset
+
+ that
+\begin_inset Formula 
+\[
+y_{2}=y_{2}+0=y_{2}+(x+y_{1})=(y_{2}+x)+y_{1}=y_{1}+(x+y_{2})=y_{1}+0=y_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The negative of the element 
+\begin_inset Formula $x$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $-x$
+\end_inset
+
+.
+ The sum 
+\begin_inset Formula $x+(-y)$
+\end_inset
+
+, written more concisely as 
+\begin_inset Formula $x-y$
+\end_inset
+
+, is called the 
+\emph on
+difference
+\emph default
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ The 
+\emph on
+negative
+\emph default
+ 
+\begin_inset Formula $-(x+y)$
+\end_inset
+
+ 
+\emph on
+of the sum
+\emph default
+ 
+\begin_inset Formula $x+y$
+\end_inset
+
+ 
+\emph on
+is the sum of the negatives of
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, since
+\begin_inset Formula 
+\[
+x+y-x-y=x-x+y-y=0+0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "canceladd"
+
+\end_inset
+
+The equation
+\begin_inset Formula 
+\begin{equation}
+a+x=b\label{eq:cancelAddition}
+\end{equation}
+
+\end_inset
+
+has a unique solution in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+, equal to 
+\begin_inset Formula $b-a.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Adding the number -
+\begin_inset Formula $a$
+\end_inset
+
+ to both sides of eqn(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cancelAddition"
+
+\end_inset
+
+) and using Axioms a--c of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-addition-axioms."
+
+\end_inset
+
+, we find that
+\begin_inset Formula 
+\[
+a+x-a=x+a-a=x+0=x=b-a,
+\]
+
+\end_inset
+
+so that the solution, if it exists, equals 
+\begin_inset Formula $b-a$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $b-a$
+\end_inset
+
+ is a solution, since
+\begin_inset Formula 
+\[
+a+(b-a)=a+b+(-a)=b+a+(-a)=b+0=b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Consequences of the Multiplication Axioms
+\end_layout
+
+\begin_layout Theorem
+The system 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ contains a unique unit element.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ contains two unit elements 
+\begin_inset Formula $1_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $1_{2}$
+\end_inset
+
+.
+ Then it follows from Axiom a of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-multiplication-axioms."
+
+\end_inset
+
+ that
+\begin_inset Formula 
+\[
+1_{2}=1_{1}\cdot1_{2}=1_{2}\cdot1_{1}=1_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Every element 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+ has a unique reciprocal.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ has two reciprocals 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, so that 
+\begin_inset Formula $xu_{1}=xu_{2}=1$
+\end_inset
+
+.
+ Then it follows from Axioms a--c of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-multiplication-axioms."
+
+\end_inset
+
+ that
+\begin_inset Formula 
+\[
+u_{2}=1\cdot u_{2}=\left(xu_{1}\right)u_{2}=x\left(u_{1}u_{2}\right)=x\left(u_{2}u_{1}\right)=\left(xu_{2}\right)u_{1}=1\cdot u_{1}=u_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The reciprocal of the element 
+\begin_inset Formula $x$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $1/x$
+\end_inset
+
+.
+ The reciprocal 
+\begin_inset Formula $1/xy$
+\end_inset
+
+ of the product 
+\begin_inset Formula $xy$
+\end_inset
+
+ is the product of the reciprocals of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, since
+\begin_inset Formula 
+\begin{equation}
+xy\frac{1}{x}\frac{1}{y}=x\frac{1}{x}y\frac{1}{y}=1\cdot1=1.\label{eq:reciprocal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The product 
+\begin_inset Formula $x\cdot1/z$
+\end_inset
+
+, written more concisely as 
+\begin_inset Formula $x/z$
+\end_inset
+
+, is called the 
+\emph on
+quotient
+\emph default
+ (or 
+\emph on
+ratio
+\emph default
+) of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+The equation
+\begin_inset Formula 
+\begin{equation}
+ax=b\quad\left(a\neq0\right)\label{eq:cancelMult}
+\end{equation}
+
+\end_inset
+
+has a unique solution in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+, equal to 
+\begin_inset Formula $b/a.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Dividing both sides of eqn(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cancelMult"
+
+\end_inset
+
+) by 
+\begin_inset Formula $a$
+\end_inset
+
+ and using Axioms a--c of §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-multiplication-axioms."
+
+\end_inset
+
+, we find that
+\begin_inset Formula 
+\[
+\frac{1}{a}\left(ax\right)=\left(\frac{1}{a}a\right)x=1\cdot x=x=\frac{b}{a},
+\]
+
+\end_inset
+
+so that the solution, if it exists, equals 
+\begin_inset Formula $b/a$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $b/a$
+\end_inset
+
+ is a solution, since
+\begin_inset Formula 
+\[
+a\frac{b}{a}=ab\frac{1}{a}=\left(a\frac{1}{a}\right)b=1\cdot b=b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The numbers
+\begin_inset Formula 
+\[
+1,2=1+1,3=2+1,\ldots,n=(n\text{−}1)+1,\ldots
+\]
+
+\end_inset
+
+are called 
+\emph on
+natural numbers
+\emph default
+ (or 
+\emph on
+positive integers
+\emph default
+).
+ Thus the set of natural numbers can be defined as the smallest numerical
+ set containing the number 
+\begin_inset Formula $1$
+\end_inset
+
+ and containing the number 
+\begin_inset Formula $n+1$
+\end_inset
+
+ whenever it contains the natural number 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+In many problems one must show that some numerical set 
+\begin_inset Formula $A$
+\end_inset
+
+ (e.g., the set of all natural numbers 
+\begin_inset Formula $n$
+\end_inset
+
+ for which some property 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+, depending on 
+\begin_inset Formula $n$
+\end_inset
+
+, is valid) contains 
+\emph on
+all
+\emph default
+ natural numbers.
+ The 
+\emph on
+method of mathematical induction
+\emph default
+, used in such problems, consists in verifying that
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ contains 
+\begin_inset Formula $1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ contains a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ also contains 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If these two conditions are satisfied, it is clear from the foregoing that
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ contains all natural numbers.
+ Thus the method of mathematical induction is a consequence of the very
+ definition of the natural numbers.
+\end_layout
+
+\begin_layout Definition
+By the 
+\emph on
+integers
+\emph default
+ we mean the natural numbers together with their negatives and the number
+ zero.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $m$
+\end_inset
+
+ be an integer.
+ Then the integer 
+\begin_inset Formula $2m$
+\end_inset
+
+ is said to be 
+\emph on
+even
+\emph default
+, while the integer 
+\begin_inset Formula $2m+1$
+\end_inset
+
+ is said to be 
+\emph on
+odd
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+By the 
+\emph on
+rational numbers
+\emph default
+ we mean all quotients of the form 
+\begin_inset Formula $m/n$
+\end_inset
+
+, where 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are integers and 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+All other real numbers are said to be 
+\emph on
+irrational
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+By definition,
+\begin_inset Formula 
+\[
+x^{n}=\underbrace{x\cdot x\cdots x}_{n\mathrm{\, times}}\quad\left(n=1,2\ldots\right),
+\]
+
+\end_inset
+
+and hence obviously
+\begin_inset Formula 
+\begin{equation}
+x^{m}x^{n}=x^{m+n},\quad\left(x^{m}\right)^{n}=x^{mn}\label{eq:lawofindices}
+\end{equation}
+
+\end_inset
+
+for arbitrary 
+\begin_inset Formula $m,n=1,2,\ldots.$
+\end_inset
+
+ The expression 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ is called the ``
+\begin_inset Formula $n$
+\end_inset
+
+th power of 
+\begin_inset Formula $x.$
+\end_inset
+
+'' To define 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ for arbitrary integers, we set
+\begin_inset Formula 
+\[
+x^{0}=1,\quad x^{-n}=\frac{1}{x^{n}}
+\]
+
+\end_inset
+
+for arbitrary 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We now verify that the formulas 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lawofindices"
+
+\end_inset
+
+ continue to hold for arbitrary integers 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Suppose first that 
+\begin_inset Formula $m>0,n=-q<0.$
+\end_inset
+
+ Then
+\begin_inset Formula 
+\[
+x^{m}x^{n}=x^{m}\frac{1}{x^{q}}=x^{m-q}x^{q}\frac{1}{x^{q}}=x^{m-q}=x^{m+n}
+\]
+
+\end_inset
+
+if 
+\begin_inset Formula $q\leqslant m$
+\end_inset
+
+, while 
+\begin_inset Formula 
+\[
+x^{m}x^{n}=x^{m}\frac{1}{x^{q}}=x^{m}\frac{1}{x^{m}x^{q-m}}=x^{m}\frac{1}{x^{m}}\frac{1}{x^{q-m}}=\frac{1}{x^{q-m}}=x^{m+n}
+\]
+
+\end_inset
+
+if 
+\begin_inset Formula $q>m$
+\end_inset
+
+, by the properties of reciprocal 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reciprocal"
+
+\end_inset
+
+.
+ On the other hand, if 
+\begin_inset Formula $m=-p<0,n=-q<0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+x^{m}x^{n}=\frac{1}{x^{p}}\frac{1}{x^{q}}=\frac{1}{x^{p+q}}=x^{m+n},
+\]
+
+\end_inset
+
+again by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reciprocal"
+
+\end_inset
+
+.
+ The second of the formulas 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lawofindices"
+
+\end_inset
+
+ is proved similarly.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "zerotimesx"
+
+\end_inset
+
+The formula
+\begin_inset Formula 
+\[
+0\cdot x=0
+\]
+
+\end_inset
+
+holds for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Clearly
+\begin_inset Formula 
+\begin{eqnarray*}
+0\cdot x+1\cdot x & = & \left(0+1\right)x=1\cdot x=x\\
+0\cdot x+1\cdot x & = & 0\cdot x+x,
+\end{eqnarray*}
+
+\end_inset
+
+and hence
+\begin_inset Formula 
+\[
+x=0\cdot x+x.
+\]
+
+\end_inset
+
+But then
+\begin_inset Formula 
+\[
+0\cdot x=x-x=0,
+\]
+
+\end_inset
+
+by Theorem 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "canceladd"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It follows that 
+\begin_inset Formula $0$
+\end_inset
+
+ has no inverse, since the equation 
+\begin_inset Formula $0\cdot x=1$
+\end_inset
+
+ is impossible.
+ This justifies the high school rule: ``Don’t divide by zero.''
+\end_layout
+
+\begin_layout Standard
+On the other hand, if 
+\begin_inset Formula $xy=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+y=\left(\frac{1}{x}x\right)y=\frac{1}{x}\left(xy\right)=\frac{1}{x}\cdot0=0.
+\]
+
+\end_inset
+
+Thus, 
+\emph on
+if a product vanishes, so does at least one of its factors
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $u\neq0,v\neq0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\frac{x}{u}+\frac{y}{v}=\frac{xv+yu}{uv}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Merely note that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{xv+yu}{uv} & = & \frac{1}{uv}\left(xv+yu\right)=\frac{1}{uv}xv+\frac{1}{uv}yu\\
+ & = & \left(\frac{1}{u}x\right)\left(\frac{1}{v}v\right)+\left(\frac{1}{v}y\right)\left(\frac{1}{u}u\right)\\
+ & = & \left(\frac{1}{u}x\right)\cdot1+\left(\frac{1}{v}y\right)\cdot1=\frac{x}{u}+\frac{y}{v}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+The formula
+\begin_inset Formula 
+\begin{equation}
+-x=\left(-1\right)x\label{eq:minusx}
+\end{equation}
+
+\end_inset
+
+holds for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A proof is necessary, since each side of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:minusx"
+
+\end_inset
+
+ is defined independently.
+\end_layout
+
+\end_inset
+
+By Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "zerotimesx"
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(-1\right)x+x=\left[\left(-1\right)+1\right]x=0\cdot x=0,
+\]
+
+\end_inset
+
+which implies 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:minusx"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{refsection}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{shilov2012elementary,kline1967mathematics}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography[heading=subbibliography]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{refsection}
 \end_layout
 
 \end_inset
