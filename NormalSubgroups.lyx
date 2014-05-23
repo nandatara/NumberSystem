@@ -1,0 +1,3259 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass memoir
+\begin_preamble
+%\renewcommand{\contentsname}{Table of Contents}
+%\renewcommand{\printtoctitle}[1]{\centering\Huge\bfseries #1}
+%\usepackage{lmodern}
+%\usepackage{fourier}
+ \usepackage{multicol}
+\usepackage[svgnames]{xcolor}
+\usepackage{calc,graphicx,soul}
+\usepackage{wrapfig}
+\usepackage{tikz,float}
+%\usepackage[all]{xypic}
+\usepackage[
+  backend=biber,
+  citestyle=alphabetic,
+  bibstyle=numeric,
+ sorting=nyt,
+ url=false, 
+doi=false,
+eprint=false,
+ url=false,
+ isbn=false
+]{biblatex}
+\usepackage[font=small,labelfont=bf,figurename=Fig.]{caption}
+
+%\nocite{*}
+\addbibresource{Z:/Lyx/Docs/analysis.bib}
+%\setsecheadstyle{\phantomsection\Large\scshape\MakeLowercase} 
+%\setsubsecheadstyle{\phantomsection\normalsize\bfseries} 
+%\setsubsubsecheadstyle{\phantomsection\small\bfseries}
+%\setaftersubsubsecskip{-1em}
+%\maxsecnumdepth{subsection}
+%\setsecnumdepth{subsection} 
+%\setsecheadstyle{\phantomsection\Large\scshape\MakeLowercase}
+%\setcounter{tocdepth}{1}
+\end_preamble
+\options openany
+\use_default_options true
+\begin_modules
+eqs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
+enumitem
+theorems-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf5
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\backgroundcolor #d9d9ff
+\boxbgcolor #55aaff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1.875in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{doc}{RGB}{0,60,110}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+ddrop} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+titleLA }
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+begingroup 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ddrop=0.2
+\backslash
+textheight 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{0.05
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+color{doc!50} 
+\backslash
+rule{6pt}{0.8
+\backslash
+textheight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.05
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{0.8
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+ddrop} %
+\backslash
+vspace{3
+\backslash
+baselineskip} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+noindent
+\backslash
+HUGE
+\backslash
+bfseries LECTURES ON 
+\backslash
+
+\backslash
+[0.1
+\backslash
+baselineskip]
+\backslash
+
+\backslash
+GROUP THEORY} 
+\backslash
+
+\backslash
+[2
+\backslash
+baselineskip] 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge Tara Nanda}
+\backslash
+
+\backslash
+[
+\backslash
+baselineskip] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vspace{2
+\backslash
+baselineskip} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{minipage}{0.8
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+itshape A course given at IISER Thiruvanathapuram in Varsha 2014} 
+\backslash
+end{minipage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+endgroup}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleLA
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{companion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{   colorlinks   = true, %Colours links instead of ugly boxes
+\end_layout
+
+\begin_layout Plain Layout
+
+urlcolor     = blue, %Colour for external hyperlinks   
+\end_layout
+
+\begin_layout Plain Layout
+
+linkcolor    = Fuchsia, %Colour of internal links   
+\end_layout
+
+\begin_layout Plain Layout
+
+citecolor   = red %Colour of citations 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{chapterstyle}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Normal subgroups and quotient groups
+\end_layout
+
+\begin_layout Standard
+The traditional presentation of normal subgroups and quotient groups goes
+ something like this.
+ First, you define a subgroup to be normal if it satisfies a certain funny
+ condition.
+ Then, given a group 
+\begin_inset Formula $G$
+\end_inset
+
+ and a normal subgroup 
+\begin_inset Formula $H$
+\end_inset
+
+, you show that you can define an operation on the cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+, and that that operation turns the set of all cosets into a group, called
+ the quotient group.
+ Ideally, you also show that one can’t give a natural group structure to
+ the left cosets of an arbitrary subgroup: that justifies restricting attention
+ to normal subgroups.
+\end_layout
+
+\begin_layout Standard
+There’s nothing terribly wrong with this approach, but it does leave one
+ question unanswered: why bother with all this stuff? The traditional approach
+ to that question is to ignore it, confident that the answer will gradually
+ reveal itself.
+ The more group theory you do, the more normal subgroups and quotients will
+ arise naturally and demonstrate their utility, so if you just diligently
+ keep studying, you will (fairly soon) come to regard normal subgroups and
+ quotient groups as natural concepts that were obviously worth introducing.
+\end_layout
+
+\begin_layout Standard
+But a slight variant of the question is harder to answer: why did anybody
+ bother to introduce these concepts in the first place? Surely the concepts
+ were introduced for a reason, and not in the vague hope that they would
+ turn out to be useful.
+\end_layout
+
+\begin_layout Standard
+The obvious way of answering this second question is to look at the history.
+ It turns out that normal subgroups were introduced by Galois (who was also
+ the founder of group theory) as part of his study of the solubility of
+ polynomials by radicals.
+ That’s slightly unfortunate, since it means that to understand why normal
+ subgroups were introduced, one has to put in a lot of work understanding
+ about the theory of solving polynomials.
+\end_layout
+
+\begin_layout Standard
+However, there is another way of justifying the introduction of a new concept
+ into mathematics.
+ Instead of looking at the actual history of that concept, one can look
+ at a 
+\emph on
+fictitious
+\emph default
+ history.
+ If you can tell a plausible story about why a concept 
+\emph on
+might
+\emph default
+ have been invented, then that is sufficient to make it seem reasonable.
+ It solves the mystery of how anyone could have thought of the concept,
+ and it also shows that it was pretty well inevitable that the concept would
+ have been introduced sooner or later.
+\end_layout
+
+\begin_layout Standard
+In this post, then, I’d like to give a fictitious account of why normal
+ subgroups and quotient groups were introduced into group theory, once some
+ of the more basic concepts were already in place.
+\end_layout
+
+\begin_layout Standard
+The first phase of group theory (in this fictitious account) consisted in
+ spotting that many mathematical structures, such as symmetries of Platonic
+ solids, permutations of a finite set, non-singular 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices, had features in common that could be abstracted out.
+ This led to the formulation of the axioms for group theory: associativity,
+ identity, inverses.
+ 
+\end_layout
+
+\begin_layout Standard
+It was noticed very early — indeed, this observation was part of what drove
+ the initial development of the subject — that two groups could be defined
+ very differently and yet be ``basically the same''.
+ For example, the group of rotations of a regular pentagon was basically
+ the same as the group of integers mod 5 under addition, and the group of
+ symmetries of a rectangle (that wasn’t a square) was basically the same
+ as the group of transformations of 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}^{3}$
+\end_inset
+
+ that consisted of the identity and the three half turns about the coordinate
+ axes.
+\end_layout
+
+\begin_layout Standard
+The first attempts to make precise this intuition that groups could be ``differe
+nt but basically the same'' were a little clumsy.
+ Two groups 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ were said to be identical up to permutation and relabelling [please bear
+ in mind that none of what I'm saying is true -- this definition included]
+ if you could find orderings of the elements of 
+\begin_inset Formula $G$
+\end_inset
+
+ and the elements of 
+\begin_inset Formula $H$
+\end_inset
+
+ such that if you formed the multiplication tables, then they would correspond,
+ in the sense that if the element listed in the 
+\begin_inset Formula $r$
+\end_inset
+
+th place times the element listed in the 
+\begin_inset Formula $s$
+\end_inset
+
+th place equals the element listed in the 
+\begin_inset Formula $t$
+\end_inset
+
+th place in 
+\begin_inset Formula $G$
+\end_inset
+
+, then the same is true in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Later, this definition was tidied up so that it became the definition of
+ isomorphism that we are now familiar with: an isomorphism from 
+\begin_inset Formula $G$
+\end_inset
+
+ to 
+\begin_inset Formula $H$
+\end_inset
+
+ is a bijection 
+\begin_inset Formula $\phi:G\to H$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi(xy)=\phi(x)\phi(y)$
+\end_inset
+
+ for every 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Two groups 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ were said to be isomorphic if there was an isomorphism between them.
+\end_layout
+
+\begin_layout Standard
+A further important step was taken when it was observed that functions 
+\begin_inset Formula $\phi$
+\end_inset
+
+ that satisfy the multiplicativity property 
+\begin_inset Formula $\phi(xy)=\phi(x)\phi(y)$
+\end_inset
+
+ were interesting and important even if they weren’t bijections.
+ To give just one of many examples, an extremely useful property of determinants
+ is that 
+\begin_inset Formula $\det(AB)$
+\end_inset
+
+ is always equal to 
+\begin_inset Formula $\det(A)\det(B)$
+\end_inset
+
+.
+ Phenomena such as this led people to study what were initially called 
+\emph on
+multiplicative
+\emph default
+ functions between groups.
+ Later, they were renamed 
+\emph on
+homomorphisms
+\emph default
+, to stress the similarity with isomorphisms.
+\end_layout
+
+\begin_layout Standard
+It was noted almost immediately that if 
+\begin_inset Formula $\phi:G\to H$
+\end_inset
+
+ is a multiplicative function, or homomorphism as we now call it, then the
+ set of 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi(g)=e$
+\end_inset
+
+ forms a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Moreover, many natural subgroups occur in that way.
+ For example, the group of rotations of 
+\begin_inset Formula $\boldsymbol{\mathbf{R}}^{3}$
+\end_inset
+
+ is what you get if you take the group of all rigid motions of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\boldsymbol{\mathbf{R}}^{3}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ that fix the origin and restrict to the ones that have determinant equal
+ to 1.
+ For that and many similar reasons, the notion of the 
+\emph on
+kernel
+\emph default
+ of a homomorphism was introduced.
+\end_layout
+
+\begin_layout Standard
+By this time, people had got a bit of a taste for the purely abstract study
+ of group theory: it excited them that they could think about a group such
+ as 
+\begin_inset Formula $C_{5}$
+\end_inset
+
+ without saying whether its elements were rotations of a pentagon or integers
+ mod 5 or something else entirely.
+ So people started studying groups 
+\emph on
+for their own sake
+\emph default
+.
+ And one of the first questions they asked was this: we know that kernels
+ of homomorphisms are subgroups, but what about the converse? That is, is
+ every subgroup the kernel of some homomorphism?
+\end_layout
+
+\begin_layout Standard
+This problem turned out not to be very interesting, since there were easy
+ counterexamples.
+ For example, if you take the permutation group 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ and take the subgroup that consists of the identity and the transposition
+ 
+\begin_inset Formula $(12)$
+\end_inset
+
+, then that is not the kernel of any homomorphism.
+ The original proof of this fact went something like this.
+ Suppose we know that 
+\begin_inset Formula $(12)$
+\end_inset
+
+ goes to the identity.
+ We can use that to deduce that, say, 
+\begin_inset Formula $(23)$
+\end_inset
+
+ also goes to the identity.
+ We do this by ``using 
+\begin_inset Formula $(12)$
+\end_inset
+
+ to do 
+\begin_inset Formula $(23)$
+\end_inset
+
+'' as follows.
+ We first find a permutation that switches 1 and 3---the obvious one being
+ 
+\begin_inset Formula $(13)$
+\end_inset
+
+.
+ We then switch 1 and 3, perform the permutation 
+\begin_inset Formula $(12)$
+\end_inset
+
+ and finally switch 1 and 3 back again.
+ More formally, we calculate the permutation 
+\begin_inset Formula $(13)(12)(13)$
+\end_inset
+
+, and we note that because we began and ended by swapping 1 and 3 round,
+ this new permutation does to 3 what the old one did to 1 and vice versa.
+ So the resulting permutation is 
+\begin_inset Formula $(32)$
+\end_inset
+
+ instead of 
+\begin_inset Formula $(12)$
+\end_inset
+
+---and 
+\begin_inset Formula $(32)$
+\end_inset
+
+ is the same as 
+\begin_inset Formula $(23)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What does that prove? Well, if we now think about what 
+\begin_inset Formula $\phi(23)$
+\end_inset
+
+ must be, it is the result of multiplying 
+\begin_inset Formula $\phi(13)$
+\end_inset
+
+ by 
+\begin_inset Formula $\phi(12)$
+\end_inset
+
+ by 
+\begin_inset Formula $\phi(13)$
+\end_inset
+
+.
+ But since 
+\begin_inset Formula $\phi(12)$
+\end_inset
+
+ is the identity and 
+\begin_inset Formula $(13)$
+\end_inset
+
+ is its own inverse, we end up just doing 
+\begin_inset Formula $\phi(13)$
+\end_inset
+
+ and inverting it again.
+ This shows that 
+\begin_inset Formula $(23)$
+\end_inset
+
+ also belongs to the kernel.
+\end_layout
+
+\begin_layout Standard
+It was soon realized that this basic trick could be used to generate lots
+ of counterexamples.
+ All you had to do was find a group 
+\begin_inset Formula $G$
+\end_inset
+
+, a subgroup 
+\begin_inset Formula $H$
+\end_inset
+
+, an element 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ and an element 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ was not in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ And that was easy to do.
+\end_layout
+
+\begin_layout Standard
+Soon this observation was turned into a formal definition.
+ A subgroup H was said to be 
+\emph on
+closed under conjugation
+\emph default
+ if 
+\begin_inset Formula $ghg^{-1}\in H$
+\end_inset
+
+ whenever 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ and 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ And now the original question was modified in an obvious way.
+ The argument used to generate counterexamples could be encapsulated in
+ the following statement: the kernel of a homomorphism must always be closed
+ under conjugation.
+ (Proof: if 
+\begin_inset Formula $\phi(h)=e$
+\end_inset
+
+, then
+\begin_inset Formula $\phi(ghg^{-1})=\phi(g)\phi(h)\phi(g^{-1})=\phi(g)\phi(g^{-1})=\phi(e)=e.$
+\end_inset
+
+) So what about the converse? Is every subgroup that is closed under conjugation
+ the kernel of some homomorphism?
+\end_layout
+
+\begin_layout Standard
+This question is an example of a phenomenon that occurs frequently in mathematic
+s.
+ You find a very simple 
+\emph on
+necessary
+\emph default
+ condition for something to be the case.
+ (In this example, being closed under conjugation is a necessary condition
+ for a subgroup to be the kernel of a homomorphism.) You then attempt to
+ show that that condition is 
+\emph on
+sufficient
+\emph default
+.
+ It’s always a pleasant surprise when you manage, since it is far from obvious
+ in advance that the conditions you have identified are the only obstacles
+ to getting what you want.
+\end_layout
+
+\begin_layout Standard
+Here, for instance, it isn’t obvious at all that just because a subgroup
+ satisfies a condition that it clearly has to satisfy, it must be the kernel
+ of some homomorphism.
+ Where’s that homomorphism going to come from? There isn’t another group
+ around, let alone a map from 
+\begin_inset Formula $G$
+\end_inset
+
+ to that group.
+\end_layout
+
+\begin_layout Standard
+This problem was found quite hard at the time, though the technique used
+ to solve it has since become standard.
+ The original thought process that led to a solution went something like
+ this.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+If you are trying to find something complicated but have no idea where to
+ start, then pretend you’ve found what you are looking for and see what
+ you can say about it.
+\end_layout
+
+\begin_layout Standard
+So let’s pretend we have a homomorphism 
+\begin_inset Formula $\phi$
+\end_inset
+
+ from 
+\begin_inset Formula $G$
+\end_inset
+
+ to some group 
+\begin_inset Formula $K$
+\end_inset
+
+ and that the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ What can we say about 
+\begin_inset Formula $\phi$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Well, one thing we know immediately is that 
+\begin_inset Formula $\phi(h)=e$
+\end_inset
+
+ for every 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, since that was our initial assumption.
+ What can we do with that information? One thing it tells us is that 
+\begin_inset Formula $\phi(g)=\phi(gh)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ and 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, and also that 
+\begin_inset Formula $\phi(g)=\phi(hg)$
+\end_inset
+
+.
+ So that tells us that 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+ whenever we can find 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ such that 
+\begin_inset Formula $g'=hg$
+\end_inset
+
+ or 
+\begin_inset Formula $g'=gh$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let’s explore that a little more.
+ Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be an element of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Can we say precisely for which elements 
+\begin_inset Formula $g'\in G$
+\end_inset
+
+ it must be the case that 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+? We’ve shown that it must when 
+\begin_inset Formula $g'=hg$
+\end_inset
+
+ or 
+\begin_inset Formula $gh$
+\end_inset
+
+ for some 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ To prove that, we used the fact that every 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ belongs to the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ But we also know the converse: that every element of the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ So if 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+, then 
+\begin_inset Formula $g^{-1}g'\in H$
+\end_inset
+
+, since 
+\begin_inset Formula $\phi(g^{-1}g')=\phi(g^{-1})\phi(g')=\phi(g)^{-1}\phi(g)=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What we have just established, using only the information that 
+\begin_inset Formula $H$
+\end_inset
+
+ is the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+, is that 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $g^{-1}g'\in H$
+\end_inset
+
+, which is the same as saying that 
+\begin_inset Formula $g'\in gH$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is constant on the left cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ but takes different values on different left cosets.
+\end_layout
+
+\begin_layout Standard
+But I could have argued slightly differently.
+ I could have shown that 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+ implies that 
+\begin_inset Formula $\phi(g'g^{-1})=e$
+\end_inset
+
+, and therefore concluded that 
+\begin_inset Formula $\phi(g)=\phi(g')$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $g'g^{-1}\in H$
+\end_inset
+
+, or 
+\begin_inset Formula $g'\in Hg$
+\end_inset
+
+.
+ This would have shown that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is constant on the right cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+, and that it takes different values on different right cosets.
+\end_layout
+
+\begin_layout Standard
+These two observations are incompatible with each other unless every left
+ coset is a right coset and vice versa.
+ So we’d better check that.
+ What right coset of 
+\begin_inset Formula $H$
+\end_inset
+
+ might be equal to 
+\begin_inset Formula $gH$
+\end_inset
+
+? Well, it had better contain 
+\begin_inset Formula $g$
+\end_inset
+
+, so 
+\begin_inset Formula $Hg$
+\end_inset
+
+ is a pretty obvious choice.
+ Does 
+\begin_inset Formula $gH=Hg$
+\end_inset
+
+? The answer is yes if and only if 
+\begin_inset Formula $gHg^{-1}=H$
+\end_inset
+
+.
+ But H is closed under conjugation, so we’re OK.
+ 
+\end_layout
+
+\begin_layout Standard
+Where have we got to now? We have shown that if 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a homomorphism from 
+\begin_inset Formula $G$
+\end_inset
+
+ to a group 
+\begin_inset Formula $K$
+\end_inset
+
+, and if the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is 
+\begin_inset Formula $H$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ must be constant on the cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ — and we have also shown that I’m allowed to say ``cosets'' because the
+ left and right cosets coincide.
+ Also, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ must take different values on different cosets.
+\end_layout
+
+\begin_layout Standard
+Is that all we can say? Very much not.
+ If we have an ounce of mathematical curiosity, then sooner or later we
+ will start to wonder whether we can say anything about how the values of
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ on different cosets are related to each other.
+ If we know that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ takes the value 
+\begin_inset Formula $a$
+\end_inset
+
+ everywhere on the coset 
+\begin_inset Formula $g_{1}H$
+\end_inset
+
+ and the value 
+\begin_inset Formula $b$
+\end_inset
+
+ everywhere on the coset 
+\begin_inset Formula $g_{2}H$
+\end_inset
+
+, can we deduce anything from that? Well, the main thing we know about 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is that it is a homomorphism, so let’s try to use that fact.
+ If 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi(g_{1}h_{1})=a$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi(g_{2}h_{2})=b$
+\end_inset
+
+, so 
+\begin_inset Formula $\phi(g_{1}h_{1}g_{2}h_{2})=ab$
+\end_inset
+
+, by the multiplicativity property.
+ By what we have just established, that tells us that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ will take the value 
+\begin_inset Formula $ab$
+\end_inset
+
+ on the entire coset to which 
+\begin_inset Formula $g_{1}h_{1}g_{2}h_{2}$
+\end_inset
+
+ belongs.
+ But what is that coset? To answer that we would like to rewrite 
+\begin_inset Formula $g_{1}h_{1}g_{2}h_{2}$
+\end_inset
+
+ as a product that begins with something in 
+\begin_inset Formula $G$
+\end_inset
+
+ and ends with something in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ It would be nice if we could let 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ swap places.
+\end_layout
+
+\begin_layout Standard
+Can we say that 
+\begin_inset Formula $h_{1}g_{2}=g_{2}h_{1}$
+\end_inset
+
+? Unfortunately not.
+ But let’s play around a little.
+ We know that 
+\begin_inset Formula $H$
+\end_inset
+
+ is closed under conjugation, so we might try to find a conjugation.
+ And we can! Rearranging the equation we were hoping for gives us that 
+\begin_inset Formula $g_{2}^{-1}h_{1}g_{2}=h_{1}$
+\end_inset
+
+.
+ There is no reason to suppose that that is true, but we do at least know
+ that the left hand side belongs to 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ So we can at least write 
+\begin_inset Formula $g_{2}^{-1}h_{1}g_{2}=h_{3}$
+\end_inset
+
+.
+ And rearranging that tells us that 
+\begin_inset Formula $g_{2}h_{3}=h_{1}g_{2}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $g_{1}h_{1}g_{2}h_{2}=g_{1}g_{2}h_{3}h_{2}$
+\end_inset
+
+.
+ That tells us that the coset that contains 
+\begin_inset Formula $g_{1}h_{1}g_{2}h_{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+, which is as nice an answer as we could have hoped for.
+\end_layout
+
+\begin_layout Standard
+What does it tell us? Let’s write 
+\begin_inset Formula $\phi(gH)=a$
+\end_inset
+
+ to mean that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ takes the value 
+\begin_inset Formula $a$
+\end_inset
+
+ everywhere on the coset 
+\begin_inset Formula $gH$
+\end_inset
+
+.
+ Then we have shown that if 
+\begin_inset Formula $\phi(g_{1}H)=a_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi(g_{2}H)=a_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi(g_{1}g_{2}H)=a_{1}a_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+OK, we’ve found all sorts of properties that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ must have, but are we any nearer to finding 
+\begin_inset Formula $\phi$
+\end_inset
+
+? Yes we are, in that losing-at-chess sense that our options are getting
+ more and more restricted, which makes it easier to work out what to do.
+ Here’s a trick that reduces our options still further.
+ One of the observations we have made is that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is constant on every coset and takes different values on different cosets.
+ That means that there is a bijection between the cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ and the elements of the image of 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+How does that help when we don’t actually know what 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is, or what its image is? It actually helps a lot.
+ We are free to 
+\emph on
+define
+\emph default
+ the image.
+ Can we think of a set that’s in one-to-one correspondence with the set
+ of all cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+? Yes of course we can: just take the set itself!
+\end_layout
+
+\begin_layout Standard
+But hang on, you might say, isn’t that a bit dangerous? There are lots of
+ sets that are in one-to-one correspondence with any given set, so what
+ reason is there to think that the set itself is a good choice? Well, here
+ are two reasons.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=(
+\backslash
+roman*)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We are given absolutely no data in the problem other than the group 
+\begin_inset Formula $G$
+\end_inset
+
+ and the subgroup 
+\begin_inset Formula $H$
+\end_inset
+
+, so it is highly likely that the homomorphism 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and the group 
+\begin_inset Formula $K$
+\end_inset
+
+ that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ maps to will be built out of 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ in some way.
+\end_layout
+
+\begin_layout Enumerate
+In a sense it doesn’t actually matter what set we define the group operation
+ on, since if we define it on a set 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta:X\to Y$
+\end_inset
+
+ is a bijection, then we can use the group operation on 
+\begin_inset Formula $X$
+\end_inset
+
+ to define essentially the same group operation on 
+\begin_inset Formula $Y$
+\end_inset
+
+ by 
+\begin_inset Formula $y_{1}\circ y_{2}=\beta(\beta^{-1}(y_{1})\circ\beta^{-1}(y_{2}))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So now we’ve managed to cut things down further.
+ We want to define a binary operation on the set of all cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ that will make it into a group, and we want the function 
+\begin_inset Formula $\phi$
+\end_inset
+
+ that takes 
+\begin_inset Formula $g$
+\end_inset
+
+ to the coset 
+\begin_inset Formula $gH$
+\end_inset
+
+ to be a homomorphism.
+\end_layout
+
+\begin_layout Standard
+Now let’s go back to what we have managed to establish about 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ An important property was that 
+\begin_inset Formula $\phi(g_{1}g_{2}H)=\phi(g_{1}H)\phi(g_{2}H)$
+\end_inset
+
+ (where 
+\begin_inset Formula $\phi(gH)$
+\end_inset
+
+ meant the constant value that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ takes on the coset 
+\begin_inset Formula $gH$
+\end_inset
+
+).
+ But now we’ve decided that we’re going to define 
+\begin_inset Formula $\phi(gH)$
+\end_inset
+
+ to be 
+\begin_inset Formula $gH$
+\end_inset
+
+ itself.
+ The only thing that we haven’t decided is what the binary operation on
+ the set of all cosets should be.
+ But what we established earlier about 
+\begin_inset Formula $\phi$
+\end_inset
+
+ forces our hand completely.
+ Since 
+\begin_inset Formula $\phi(g_{1}H)\phi(g_{2}H)$
+\end_inset
+
+ must equal 
+\begin_inset Formula $\phi(g_{1}g_{2}H)$
+\end_inset
+
+ and since 
+\begin_inset Formula $\phi(gH)=gH$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $(g_{1}H)\circ(g_{2}H)$
+\end_inset
+
+ must be 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+.
+ We have arrived at the definition of the quotient group
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Usually when the quotient group is defined, one defines the binary operation
+ on the set of cosets and then checks that it is well-defined.
+ In the course of the above thoughts, we have basically already checked
+ this.
+\end_layout
+
+\end_inset
+
+ and the quotient map, and thereby solved the problem.
+\end_layout
+
+\begin_layout Standard
+In my fictitious world, there was one final stage in the early development
+ of group theory, which was that all the thoughts that led to the definition
+ of the quotient group were carefully suppressed.
+ The solution to the kernels classification problem was presented like this.
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "normal"
+
+\end_inset
+
+A subgroup 
+\begin_inset Formula $H$
+\end_inset
+
+ of a group 
+\begin_inset Formula $G$
+\end_inset
+
+ is the kernel of some homomorphism if and only if it is closed under conjugatio
+n.
+\end_layout
+
+\begin_layout Proof
+First we show that the condition is necessary.
+ Let 
+\begin_inset Formula $\phi:G\to K$
+\end_inset
+
+ be a homomorphism with kernel 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Then for every 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ and every 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+\phi(ghg^{-1})=\phi(g)\phi(h)\phi(g)^{-1}=\phi(g)\phi(g)^{-1}=e,
+\]
+
+\end_inset
+
+ which proves that 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ also belongs to the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+, and thus also to 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ That proves that 
+\begin_inset Formula $H$
+\end_inset
+
+ is closed under conjugation.
+\end_layout
+
+\begin_layout Proof
+Now suppose that 
+\begin_inset Formula $H$
+\end_inset
+
+ is closed under conjugation.
+ Define a group 
+\begin_inset Formula $K$
+\end_inset
+
+ as follows.
+ Its elements are the left cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ (which, it can be shown, are also the right cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+).
+ We define a binary operation on these cosets by taking 
+\begin_inset Formula $(g_{1}H)\circ(g_{2}H)$
+\end_inset
+
+ to equal 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+There are a few things we must check.
+ First, we must make sure that the definition we have just given does not
+ change if we choose different elements 
+\begin_inset Formula $g_{1}'$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}'$
+\end_inset
+
+ of the cosets 
+\begin_inset Formula $g_{1}H$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}H$
+\end_inset
+
+.
+ A quick way of doing that is to note that a different way of defining 
+\begin_inset Formula $(g_{1}H)\circ(g_{2}H)$
+\end_inset
+
+ is as the set of all 
+\begin_inset Formula $xy$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in g_{1}H$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in g_{2}H$
+\end_inset
+
+.
+ That definition clearly depends on the cosets themselves and not on how
+ they are described, but does it give us 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+? Well, it certainly contains 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+.
+ In the other direction, 
+\begin_inset Formula $g_{1}h_{1}g_{2}h_{2}=g_{1}g_{2}(g_{2}^{-1}h_{1}g_{2})h_{2}=g_{1}g_{2}h_{3}h_{2}\in g_{1}g_{2}H$
+\end_inset
+
+, so it is also contained in 
+\begin_inset Formula $g_{1}g_{2}H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Now let us define a function 
+\begin_inset Formula $\phi:G\to K$
+\end_inset
+
+ by 
+\begin_inset Formula $\phi(g)=gH$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi(g_{1}g_{2})=g_{1}g_{2}H$
+\end_inset
+
+, which, by definition of the group operation on 
+\begin_inset Formula $K$
+\end_inset
+
+, is equal to 
+\begin_inset Formula $g_{1}H\circ g_{2}H$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a homomorphism.
+ For 
+\begin_inset Formula $\phi(g)=gH$
+\end_inset
+
+ to equal 
+\begin_inset Formula $H$
+\end_inset
+
+ we need 
+\begin_inset Formula $g\in H$
+\end_inset
+
+, so the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is 
+\begin_inset Formula $H$
+\end_inset
+
+, as required.
+\end_layout
+
+\begin_layout Standard
+Unfortunately, each year a few of the brighter mathematics students found
+ this argument reasonably easy to digest.
+ So the decision was taken to suppress all mention of why the group 
+\begin_inset Formula $K$
+\end_inset
+
+ was constructed.
+ Instead, it became common practice to define the quotient group 
+\begin_inset Formula $G/H$
+\end_inset
+
+ for no apparent reason and to point out only later that the function 
+\begin_inset Formula $g\mapsto gH$
+\end_inset
+
+, known as the quotient map was a homomorphism with kernel 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Now, at last, the goal of making the concept difficult for everybody had
+ been triumphantly achieved.
+\end_layout
+
+\begin_layout Standard
+A further development was the realization that the method that had been
+ arrived at was very general indeed.
+ After this proof, different notions of ``quotient'' kept appearing all
+ over mathematics, and in an effort to find a unified description of them,
+ the notion of an equivalence relation was formulated.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Application
+\series default
+ The determinant map 
+\begin_inset Formula $\det:GL(n,\boldsymbol{\mathbf{R}})→\boldsymbol{\mathbf{\mathbf{R^{\star}}}}$
+\end_inset
+
+ is a group homomorphism.
+ Hence the set of all 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices with determinant 1 is a normal subgroup of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $GL(n,\boldsymbol{\mathbf{R}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here’s a different way of presenting the proof, which uses equivalence relations
+ instead of partitioning into cosets.
+ I’ll switch to using the phrase ``normal subgroup'' rather than talking
+ about subgroups being closed under conjugation.
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $H$
+\end_inset
+
+ be a normal subgroup of a group 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Then there is a group 
+\begin_inset Formula $K$
+\end_inset
+
+ and a homomorphism 
+\begin_inset Formula $\phi:G\to K$
+\end_inset
+
+ such that 
+\begin_inset Formula $H$
+\end_inset
+
+ is the kernel of 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Define two elements 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ to be 
+\begin_inset Formula $H$
+\end_inset
+
+-equivalent, and write 
+\begin_inset Formula $g_{1}\sim g_{2}$
+\end_inset
+
+, if there exists 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ such that 
+\begin_inset Formula $g_{2}=g_{1}h$
+\end_inset
+
+.
+ It is easy to check that this is an equivalence relation.
+\end_layout
+
+\begin_layout Proof
+Now we shall prove that if 
+\begin_inset Formula $g_{1}\sim g_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}\sim g_{4}$
+\end_inset
+
+, then 
+\begin_inset Formula $g_{1}g_{2}\sim g_{3}g_{4}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ be such that 
+\begin_inset Formula $g_{3}=g_{1}h_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{4}=g_{2}h_{2}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $g_{3}g_{4}=g_{1}h_{1}g_{2}h_{2}=g_{1}g_{2}(g_{2}^{-1}h_{1}g_{2})h_{2}=g_{1}g_{2}h_{3}$
+\end_inset
+
+, where 
+\begin_inset Formula $h_{3}=(g_{2}^{-1}h_{1}g_{2})h_{2}$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $H$
+\end_inset
+
+, since 
+\begin_inset Formula $H$
+\end_inset
+
+ is a normal subgroup.
+\end_layout
+
+\begin_layout Proof
+It follows that we can define a group operation on the equivalence classes
+ of 
+\begin_inset Formula $\sim$
+\end_inset
+
+: if 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are two equivalence classes, then all products 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $g_{1}\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}\in Y$
+\end_inset
+
+ are equivalent, and we let that equivalence class be the product of 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The group axioms for this operation basically follow if we replace ``
+\begin_inset Formula $=$
+\end_inset
+
+'' by ``
+\begin_inset Formula $\sim$
+\end_inset
+
+'' in the usual group axioms.
+ For instance, given any three elements 
+\begin_inset Formula $g_{1},g_{2},g_{3}$
+\end_inset
+
+ of the group, we know that 
+\begin_inset Formula $g_{1}(g_{2}g_{3})=(g_{1}g_{2})g_{3}$
+\end_inset
+
+.
+ It follows that 
+\begin_inset Formula $g_{1}(g_{2}g_{3})\sim(g_{1}g_{2})g_{3}$
+\end_inset
+
+, and from that and the definition of the product it follows that 
+\begin_inset Formula $[g_{1}]([g_{2}][g_{3}])=([g_{1}][g_{2}])[g_{3}]$
+\end_inset
+
+ (where 
+\begin_inset Formula $[g]$
+\end_inset
+
+ stands for the equivalence class of 
+\begin_inset Formula $g$
+\end_inset
+
+).
+ And a similar argument shows that the map that takes 
+\begin_inset Formula $g$
+\end_inset
+
+ to 
+\begin_inset Formula $[g]$
+\end_inset
+
+ for each 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ is a homomorphism.
+ The kernel of this map is 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+First Isomorphism Theorem
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:M\rightarrow N$
+\end_inset
+
+ is a map between sets 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+, then you get an equivalence relation 
+\begin_inset Formula $R_{f}:=\{(x,y)\in M\times M\::\: f(x)=f(y)\}$
+\end_inset
+
+.
+ The equivalence class of 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ is 
+\begin_inset Formula $f^{-1}(\{f(x)\})$
+\end_inset
+
+, so we have a well-defined (and injective) map from 
+\begin_inset Formula $M/R_{f}$
+\end_inset
+
+ (the set of equivalence classe) to 
+\begin_inset Formula $N$
+\end_inset
+
+, sending 
+\begin_inset Formula $f^{-1}(\{f(x)\})$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ Thus, first collecting all elements, which map to the same element via
+ 
+\begin_inset Formula $f$
+\end_inset
+
+, and then mapping these collections to their respective values gives you
+ a bijection onto the image.
+\end_layout
+
+\begin_layout Standard
+In 
+\emph on
+nice
+\emph default
+ structures such as groups, vector fields, or modules over a ring, the preimage
+ of the unit element (or 0 if group operation is +) uniquely determines
+ the preimage of all other elements.
+ Thus in the case of groups 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $K$
+\end_inset
+
+ and group homomorphism 
+\begin_inset Formula $f:G\rightarrow K$
+\end_inset
+
+ you have 
+\begin_inset Formula $f^{-1}(\{f(x)\})=x\ker(f)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ and the induced map is a group homomorphism, yielding an isomorphism to
+ the image.
+\end_layout
+
+\begin_layout Standard
+We have seen that a homomorphism takes constant values on the cosets 
+\begin_inset Formula $gH$
+\end_inset
+
+ where 
+\begin_inset Formula $H$
+\end_inset
+
+ is the kernel of the homomorphosm.
+ So there is a one to one correspondence between the set of cosets and the
+ set of values of the homomorphism.
+ The 
+\emph on
+first isomorphism theorem 
+\emph default
+shows in fact that this correspondence is in fact an isomorphism.
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $f\,:G\to K$
+\end_inset
+
+ is a homomorphism of groups, then it induces an isomorphism 
+\begin_inset Formula $G/\mathrm{ker\,}f\cong f\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $H=\mathrm{ker\,}f$
+\end_inset
+
+ is a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+ by Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "normal"
+
+\end_inset
+
+.
+ To prove the theorem we will define a map from 
+\begin_inset Formula $G/H$
+\end_inset
+
+ to the image of 
+\begin_inset Formula $f$
+\end_inset
+
+ and show that it is a function, a homomorphism and finally an isomorphism.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\theta\colon G/H\to f(G)$
+\end_inset
+
+ be a map that sends the coset 
+\begin_inset Formula $gH$
+\end_inset
+
+ to 
+\begin_inset Formula $f(g)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is defined on representatives we need to show that it is well defined.
+ So, let 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ be two elements of 
+\begin_inset Formula $G$
+\end_inset
+
+ that belong to the same coset (i.e., 
+\begin_inset Formula $g_{1}H=g_{2}H$
+\end_inset
+
+).
+ Then, 
+\begin_inset Formula $g_{1}^{-1}g_{2}$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $H$
+\end_inset
+
+ and therefore
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+A homomorphism is constant on cosets
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $f(g_{1}^{-1}g_{2})=1$
+\end_inset
+
+ (because 
+\begin_inset Formula $H$
+\end_inset
+
+ is the kernel of 
+\begin_inset Formula $f$
+\end_inset
+
+).
+ Now, the rules of homomorphism show that 
+\begin_inset Formula $f(g_{1})^{-1}f(g_{2})=1$
+\end_inset
+
+ and that is equivalent to 
+\begin_inset Formula $f(g_{1})=f(g_{2})$
+\end_inset
+
+ which implies the equality 
+\begin_inset Formula $\theta(g_{1}H)=\theta(g_{2}H)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Next we verify that 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a homomorphism.
+ Take two cosets 
+\begin_inset Formula $g_{1}H$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{2}H$
+\end_inset
+
+, then: 
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+\theta(g_{1}H\cdot g_{2}H) & = & \theta(g_{1}g_{2}H) & \text{(operation in \ensuremath{G/K})}\\
+ & = & f(g_{1}g_{2}) & \text{(definition of \ensuremath{\theta})}\\
+ & = & f(g_{1})f(g_{2}) & \text{(\ensuremath{f} is an homomorphism)}\\
+ & = & \theta(g_{1}H)\theta(g_{2}H)\  & \text{(definition of \ensuremath{\theta})}
+\end{array}
+\]
+
+\end_inset
+
+Finally, we show that 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is an isomorphism (i.e.
+ a bijection).
+ The kernel of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ consists of all cosets 
+\begin_inset Formula $gH$
+\end_inset
+
+ in 
+\begin_inset Formula $G/H$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(g)=1$
+\end_inset
+
+ but these are exactly the elements 
+\begin_inset Formula $g$
+\end_inset
+
+ that belong to 
+\begin_inset Formula $H$
+\end_inset
+
+ so only the coset 
+\begin_inset Formula $H$
+\end_inset
+
+ is in the kernel of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ which implies that 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is an injection.
+ Let 
+\begin_inset Formula $k=f(g)$
+\end_inset
+
+ be an element of 
+\begin_inset Formula $f(G)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\theta(gH)$
+\end_inset
+
+ equals 
+\begin_inset Formula $f(g)$
+\end_inset
+
+ thus 
+\begin_inset Formula $\theta(gH)=h$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is surjective.
+\end_layout
+
+\begin_layout Proof
+The theorem is proved.
+\end_layout
+
+\begin_layout Remark*
+Some version of the theorem also state that the following diagram is commutative
+:
+\begin_inset Formula 
+\[
+\xymatrix{G\ar[rd]_{f}\ar[r]^{\pi} & G/H\ar[d]_{\theta}\\
+ & K
+}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is the natural projection that takes 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ to 
+\begin_inset Formula $gH$
+\end_inset
+
+.
+ We will conclude by verifying this.
+ Take 
+\begin_inset Formula $g$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ then, 
+\begin_inset Formula $\theta(\pi(g))=\theta(gH)=f(g)$
+\end_inset
+
+ as needed.
+\end_layout
+
+\begin_layout Chapter
+Second Isomorphism Theorem
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group, 
+\begin_inset Formula $N$
+\end_inset
+
+ a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+, and let 
+\begin_inset Formula $H$
+\end_inset
+
+ be any subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\pi$
+\end_inset
+
+ be the canonical homomorphism from 
+\begin_inset Formula $G$
+\end_inset
+
+ to 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+ A natural question is what is 
+\begin_inset Formula $\pi(H)$
+\end_inset
+
+? If 
+\begin_inset Formula $N$
+\end_inset
+
+ is a subgroup of 
+\begin_inset Formula $H$
+\end_inset
+
+ then the answer is simple 
+\begin_inset Formula $\pi(H)=H/N$
+\end_inset
+
+.
+ What if 
+\begin_inset Formula $H$
+\end_inset
+
+ does not contain 
+\begin_inset Formula $N$
+\end_inset
+
+? The answer is given by the 
+\emph on
+second isomorphism theorem
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "secondiso"
+
+\end_inset
+
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group, 
+\begin_inset Formula $N$
+\end_inset
+
+ a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+, and let 
+\begin_inset Formula $H$
+\end_inset
+
+ be any subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\pi$
+\end_inset
+
+ be the canonical homomorphism from 
+\begin_inset Formula $G$
+\end_inset
+
+ to 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\pi(H)=\left(HN\right)/N$
+\end_inset
+
+ and is isomorphic to 
+\begin_inset Formula $H/\left(H\cap N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The image of 
+\begin_inset Formula $HN$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ are same under 
+\begin_inset Formula $\pi$
+\end_inset
+
+ since 
+\begin_inset Formula $\pi(hn)=\pi(h)\pi(n)=\pi(h)$
+\end_inset
+
+.
+ Also 
+\begin_inset Formula $N$
+\end_inset
+
+ is a normal subgroup of 
+\begin_inset Formula $HN$
+\end_inset
+
+ and the restriction of 
+\begin_inset Formula $\pi$
+\end_inset
+
+ to 
+\begin_inset Formula $HN$
+\end_inset
+
+ is also a homomorphism with kernel 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ By the first isomorphism theorem 
+\begin_inset Formula $\pi(H)=\pi(HN)=\left(HN\right)/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The restriction of 
+\begin_inset Formula $\pi$
+\end_inset
+
+ on 
+\begin_inset Formula $H$
+\end_inset
+
+ is a homomorphism with kernel 
+\begin_inset Formula $H\cap N$
+\end_inset
+
+.
+ Again by the first isomorphism theorem 
+\begin_inset Formula $\pi(H)$
+\end_inset
+
+ is isomorphic to 
+\begin_inset Formula $H/\left(H\cap N\right)$
+\end_inset
+
+.
+ This completes the proof.
+\end_layout
+
+\begin_layout Remark*
+The basic idea of the proof is to ``count'' the number of distinct cosets
+ 
+\begin_inset Formula $hN$
+\end_inset
+
+.
+ It is easy to verify that any such coset is a member of 
+\begin_inset Formula $\left(HN\right)/N$
+\end_inset
+
+ as well as 
+\begin_inset Formula $H/\left(H\cap N\right)$
+\end_inset
+
+ and vice-versa.
+ For example if 
+\begin_inset Formula $gN=hN$
+\end_inset
+
+ then 
+\begin_inset Formula $g=g\circ e$
+\end_inset
+
+
+\begin_inset Formula $\subset HN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+We can give an alternate proof by defining 
+\begin_inset Formula $\phi\colon H\to\left(HN\right)/N$
+\end_inset
+
+ by 
+\begin_inset Formula $\phi\left(h\right)=hN$
+\end_inset
+
+.
+ It is easy to verify that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a surjective homomorphism with kernel 
+\begin_inset Formula $H\cap N$
+\end_inset
+
+.
+ The rest follows from the first isomorphism theorem.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "Cor31"
+
+\end_inset
+
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group, 
+\begin_inset Formula $N$
+\end_inset
+
+ a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+, and let 
+\begin_inset Formula $H$
+\end_inset
+
+ be any subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left|HN\right|$
+\end_inset
+
+ is finite then
+\begin_inset Formula 
+\[
+\left|HN\right|=\frac{\left|H\right|\left|N\right|}{\left|H\cap N\right|}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Each coset of 
+\begin_inset Formula $H\cap N$
+\end_inset
+
+ in 
+\begin_inset Formula $H$
+\end_inset
+
+ has cardinality 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left|H\cap N\right|$
+\end_inset
+
+.
+ Since these cosets partition 
+\begin_inset Formula $H$
+\end_inset
+
+ there are exactly 
+\begin_inset Formula $\left|H\right|/\left|H\cap N\right|$
+\end_inset
+
+ such cosets and by Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "secondiso"
+
+\end_inset
+
+ this number also equal 
+\begin_inset Formula $\left|HN\right|/\left|N\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a finite group, 
+\begin_inset Formula $N$
+\end_inset
+
+ a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+, and let 
+\begin_inset Formula $H$
+\end_inset
+
+ be any subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $H\cap N=\left\{ e\right\} ,\left|G\right|=\left|H\right|\left|N\right|$
+\end_inset
+
+ then 
+\begin_inset Formula $G=HN$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ is isomorphic to 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+By Cor.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Cor31"
+
+\end_inset
+
+ 
+\begin_inset Formula $\left|HN\right|=\left|G\right|$
+\end_inset
+
+hence 
+\begin_inset Formula $G=HN$
+\end_inset
+
+.
+ By the second isomorphism theorem 
+\begin_inset Formula $G/N=\left(HN\right)/N\simeq H/\left(H\cap N\right)=H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Chapter
+Third Isomorphism Theorem
+\end_layout
+
+\begin_layout Standard
+We know that image of subgroup is subgroup of image.
+ What about normal subgroups? Is image of normal subgroup normal in image
+ ? Or Inverse image of normal is normal in G?.
+ After we answer these questions, you should wonder is there any relation
+ between the quotient in 
+\begin_inset Formula $G$
+\end_inset
+
+ and the quotient in 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $N$
+\end_inset
+
+ be a normal subgroup of a group 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ be a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+ that contains 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $H/N$
+\end_inset
+
+ is normal in 
+\begin_inset Formula $G/N$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal in 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal then
+\begin_inset Formula 
+\[
+G/H\simeq\frac{G/N}{H/N}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose that 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal in 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Define the function 
+\begin_inset Formula $\phi\colon G/N\to G/H$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+\phi\left(gN\right)=gH.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\phi$
+\end_inset
+
+ is well defined because 
+\begin_inset Formula $g_{1}N=g_{2}N$
+\end_inset
+
+ implies 
+\begin_inset Formula $g_{1}^{-1}g_{2}\in N$
+\end_inset
+
+ 
+\begin_inset Formula $\subset H$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $g_{1}H=g_{2}H$
+\end_inset
+
+ .
+ Clearly 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a homomorphism onto 
+\begin_inset Formula $G/H$
+\end_inset
+
+ with kernel 
+\begin_inset Formula $H/N$
+\end_inset
+
+ .
+ Hence 
+\begin_inset Formula $H/N$
+\end_inset
+
+ is normal and by the first isomorphism theorem
+\begin_inset Formula 
+\[
+\phi\left(G/N\right)=G/H\simeq\frac{G/N}{H/N}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Cayley Tables
+\end_layout
+
+\begin_layout Standard
+The problem with ``counting Cayley tables'' is that they mostly only come
+ up at the beginning of one's study of group theory, whereas it takes some
+ group-theoretic sophistication to understand how and what to count, especially
+ when two Cayley tables are to be regarded as distinct.
+ In order to avoid a lot of tables which are permutations of each other,
+ let's adopt the convention that whenever a product of two group elements
+ is an element that hasn't yet appeared above and to the left of it in the
+ table, one should name the new element with the next available letter in
+ the alphabet or the identity .
+ We illustrate this with the classification of all groups of order 4.
+\end_layout
+
+\begin_layout Standard
+Here is one possibility:
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline +_{\mathbb{\boldsymbol{\mathbf{Z}}}_{2}\times\mathbb{\boldsymbol{\mathbf{Z}}}_{2}} & e & a & b & c\\
+\hline e & e & a & b & c\\
+\hline a & a & e & c & b\\
+\hline b & b & c & e & a\\
+\hline c & c & b & a & e
+\\\hline \end{array}
+\]
+
+\end_inset
+
+Let us go through the steps.
+\end_layout
+
+\begin_layout Enumerate
+The first row is clear since 
+\begin_inset Formula $e\circ x=x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+In the second row we set 
+\begin_inset Formula $a\circ a=e$
+\end_inset
+
+ sinc 
+\begin_inset Formula $e$
+\end_inset
+
+ has not appeared to the left or above.
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ has to be 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $a\circ c=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+In the third row 
+\begin_inset Formula $b\circ b=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Finally the last row is uniquely determined.
+\end_layout
+
+\begin_layout Standard
+This is an example of the so called 
+\emph on
+Klein 4 group
+\emph default
+ in which every element is of order 2.
+\end_layout
+
+\begin_layout Standard
+Now suppose we set 
+\begin_inset Formula $a\circ a=b$
+\end_inset
+
+ (the next available letter) in step 2 above.
+ Then we shall get the following table:
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline +_{4} & e & a & b & c\\
+\hline e & e & a & b & c\\
+\hline a & a & b & c & e\\
+\hline b & b & c & e & a\\
+\hline c & c & e & a & b
+\\\hline \end{array}
+\]
+
+\end_inset
+
+This is the abelian group of the integers modulo 4: 
+\begin_inset Formula $(\mathbb{\boldsymbol{\mathbf{Z}}}/(4),+_{4})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the following Cayley table for the group formed by 
+\begin_inset Formula $\left\{ 1,i,-i,-1\right\} $
+\end_inset
+
+of the fourth roots of unity:
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline \cdot_{\mathbb{C}} & e & a & b & c\\
+\hline e & e & a & b & c\\
+\hline a & a & c & e & b\\
+\hline b & b & e & c & a\\
+\hline c & c & b & a & e
+\\\hline \end{array}
+\]
+
+\end_inset
+
+Suppose we exchange rows 3 and 4.
+ We shall get 
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline \cdot_{\mathbb{C}} & e & a & b & c\\
+\hline e & e & a & b & c\\
+\hline a & a & c & e & b\\
+\hline c & c & b & a & e\\
+\hline b & b & e & c & a
+\\\hline \end{array}
+\]
+
+\end_inset
+
+ Likewise we permute the columns 3 and 4.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline \cdot_{\mathbb{C}} & e & a & c & b\\
+\hline e & e & a & c & b\\
+\hline a & a & c & b & e\\
+\hline c & c & b & e & a\\
+\hline b & b & e & a & c
+\\\hline \end{array}
+\]
+
+\end_inset
+
+ This is the same as the Cayley table for the abelian group of the integers
+ modulo 4 if we rename 
+\begin_inset Formula $b$
+\end_inset
+
+ to 
+\begin_inset Formula $c$
+\end_inset
+
+ and vice-versa.
+\end_layout
+
+\begin_layout Standard
+Next consider the following Cayley table for the group formed by 
+\begin_inset Formula $\left\{ 1,-1,i,-1\right\} $
+\end_inset
+
+of the fourth roots of unity:
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline \cdot_{\mathbb{C}} & e & a & b & c\\
+\hline e & e & a & b & c\\
+\hline a & a & e & c & b\\
+\hline b & b & c & a & e\\
+\hline c & c & b & e & a
+\\\hline \end{array}
+\]
+
+\end_inset
+
+ Again exchange rows 2 and 3 and columns 2 and 3 to get
+\begin_inset Formula 
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline \cdot_{\mathbb{C}} & e & b & a & c\\
+\hline e & e & b & a & c\\
+\hline b & b & a & c & e\\
+\hline a & a & c & e & b\\
+\hline c & c & e & b & a
+\\\hline \end{array}
+\]
+
+\end_inset
+
+ This is the same as the Cayley table for the abelian group of the integers
+ modulo 4 if we rename 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+ and vice-versa.
+\end_layout
+
+\end_body
+\end_document
